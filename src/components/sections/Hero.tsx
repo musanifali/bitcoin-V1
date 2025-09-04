@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Play, Shield, TrendingUp, Globe, Users } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -78,77 +79,27 @@ const Hero = () => {
           >
             {/* Main Illustration Container */}
             <div className="relative w-full h-96 lg:h-[500px]">
-              {/* Central Bitcoin Vault */}
+              {/* Hero Image */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative">
-                  {/* Vault/Safe Illustration */}
-                  <div className="w-48 h-48 lg:w-64 lg:h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl relative overflow-hidden border-4 border-bitcoin-500/20">
-                    <div className="absolute inset-0 bg-gradient-to-br from-bitcoin-500/10 to-orange-500/10" />
-                    
-                    {/* V1 Badge - Top Right Corner */}
-                    <motion.div 
-                      className="absolute -top-2 -right-2 z-10"
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: 0.6, type: "spring", stiffness: 100 }}
-                    >
-                      <div className="relative">
-                        {/* Main V1 Badge */}
-                        <div className="w-16 h-16 bg-gradient-to-br from-bitcoin-500 via-bitcoin-600 to-orange-600 rounded-full shadow-2xl border-4 border-white/20 flex items-center justify-center">
-                          <span className="text-white font-black text-lg tracking-tight">V1</span>
-                        </div>
-                        {/* Subtle Shine Effect */}
-                        <div className="absolute top-2 left-2 w-3 h-3 bg-white/40 rounded-full blur-sm" />
-                      </div>
-                    </motion.div>
-                    
-                    {/* Vault Door Handle */}
-                    <div className="absolute top-1/2 right-4 w-8 h-8 bg-gradient-to-r from-bitcoin-400 to-bitcoin-600 rounded-full shadow-lg transform -translate-y-1/2" />
-                    
-                    {/* Bitcoin Symbol in Center */}
-                    <motion.div 
-                      className="absolute inset-0 flex items-center justify-center"
-                      initial={{ opacity: 0, scale: 0.5 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.8, type: "spring", stiffness: 80 }}
-                    >
-                      <span className="text-bitcoin-500 text-6xl lg:text-7xl font-bold">₿</span>
-                    </motion.div>
-                    
-                    {/* Security Lock Indicators */}
-                    <motion.div 
-                      className="absolute top-4 left-4 w-3 h-3 bg-green-400 rounded-full"
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 1.0 }}
+                  {/* Main Hero Image */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.5, type: "spring", stiffness: 80 }}
+                    className="relative w-80 h-80 lg:w-96 lg:h-96"
+                  >
+                    <Image
+                      src="/illustrations/hero.png"
+                      alt="Bitcoin V1 Hero Illustration"
+                      fill
+                      className="object-contain"
+                      priority
                     />
-                    <motion.div 
-                      className="absolute top-4 right-12 w-3 h-3 bg-green-400 rounded-full"
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 1.1 }}
-                    />
-                    <motion.div 
-                      className="absolute bottom-4 left-4 w-3 h-3 bg-green-400 rounded-full"
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 1.2 }}
-                    />
-                    <motion.div 
-                      className="absolute bottom-4 right-4 w-3 h-3 bg-green-400 rounded-full"
-                      initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 1.3 }}
-                    />
-                  </div>
+                  </motion.div>
                   
-                  {/* Floating Elements Around Vault */}
+                  {/* Floating Elements Around Image */}
                   <motion.div 
                     className="absolute -top-8 -left-8 w-16 h-16 bg-bitcoin-500/20 rounded-full flex items-center justify-center"
                     initial={{ opacity: 0, x: -20, y: -20 }}

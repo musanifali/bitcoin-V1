@@ -4,48 +4,78 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Base & Backgrounds */
+    --background: 0 0% 100%; /* soft off-white */
+    --foreground: 222 84% 5%; /* deep slate */
+    --card: 0 0% 100%; /* pure white */
+    --card-foreground: 222 84% 5%; /* deep slate */
+    --popover: 0 0% 100%; /* pure white */
+    --popover-foreground: 222 84% 5%; /* deep slate */
+    
+    /* Brand & Accents */
     --primary: 24 100% 50%; /* Bitcoin orange */
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 24 100% 50%;
+    --primary-foreground: 0 0% 100%; /* white text on orange */
+    --secondary: 210 70% 92%; /* pastel blue */
+    --secondary-foreground: 222 84% 5%; /* deep slate */
+    --tertiary: 150 60% 85%; /* pastel green */
+    --tertiary-foreground: 222 84% 5%; /* deep slate */
+    
+    /* Text Colors */
+    --muted: 210 20% 95%; /* pale gray for muted backgrounds */
+    --muted-foreground: 215 16% 47%; /* muted gray-blue for subcopy */
+    --accent: 260 40% 88%; /* pastel purple for highlights */
+    --accent-foreground: 222 84% 5%; /* deep slate */
+    
+    /* Functional Colors */
+    --success: 150 50% 45%; /* soft mint green */
+    --success-foreground: 0 0% 100%; /* white */
+    --warning: 45 95% 50%; /* golden yellow */
+    --warning-foreground: 222 84% 5%; /* deep slate */
+    --destructive: 0 84% 55%; /* red-orange */
+    --destructive-foreground: 0 0% 100%; /* white */
+    
+    /* Borders & Interactive */
+    --border: 214 32% 91%; /* light gray */
+    --input: 214 32% 91%; /* light gray */
+    --ring: 24 100% 50%; /* Bitcoin orange focus ring */
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 24 100% 60%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 24 100% 60%;
+    /* Base & Backgrounds - Dark Mode */
+    --background: 222 84% 5%; /* near-black with blue tint */
+    --foreground: 210 40% 98%; /* soft white */
+    --card: 222 84% 5%; /* near-black with blue tint */
+    --card-foreground: 210 40% 98%; /* soft white */
+    --popover: 222 84% 5%; /* near-black with blue tint */
+    --popover-foreground: 210 40% 98%; /* soft white */
+    
+    /* Brand & Accents - Dark Mode */
+    --primary: 24 100% 60%; /* brighter orange for dark mode */
+    --primary-foreground: 222 84% 5%; /* dark text on orange */
+    --secondary: 210 50% 20%; /* darker pastel blue */
+    --secondary-foreground: 210 40% 98%; /* soft white */
+    --tertiary: 150 40% 25%; /* darker pastel green */
+    --tertiary-foreground: 210 40% 98%; /* soft white */
+    
+    /* Text Colors - Dark Mode */
+    --muted: 217 32% 17%; /* dark muted background */
+    --muted-foreground: 215 20% 65%; /* lighter muted text */
+    --accent: 260 25% 25%; /* darker pastel purple */
+    --accent-foreground: 210 40% 98%; /* soft white */
+    
+    /* Functional Colors - Dark Mode */
+    --success: 150 50% 50%; /* brighter mint for dark mode */
+    --success-foreground: 222 84% 5%; /* dark text */
+    --warning: 45 95% 55%; /* slightly brighter yellow */
+    --warning-foreground: 222 84% 5%; /* dark text */
+    --destructive: 0 84% 60%; /* brighter red-orange */
+    --destructive-foreground: 210 40% 98%; /* soft white */
+    
+    /* Borders & Interactive - Dark Mode */
+    --border: 217 32% 17%; /* dark border */
+    --input: 217 32% 17%; /* dark input */
+    --ring: 24 100% 60%; /* brighter orange focus ring */
   }
 }
 
