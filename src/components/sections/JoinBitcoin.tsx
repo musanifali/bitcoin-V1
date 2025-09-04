@@ -80,7 +80,7 @@ const JoinBitcoin = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-bitcoin-50 to-orange-50 dark:from-bitcoin-950/20 dark:to-orange-950/20 rounded-2xl p-8 text-center">
+        <div className="bg-gradient-to-r from-bitcoin-50 to-orange-50 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-foreground mb-4">
             Ready to start holding Bitcoin professionally?
           </h3>

@@ -61,7 +61,7 @@ const Values = () => {
               className="relative text-center space-y-4 group cursor-pointer"
             >
               {/* Background Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-bitcoin-50/0 to-bitcoin-100/0 group-hover:from-bitcoin-50/50 group-hover:to-bitcoin-100/30 rounded-2xl transition-all duration-500 dark:from-bitcoin-950/0 dark:to-bitcoin-900/0 dark:group-hover:from-bitcoin-950/20 dark:group-hover:to-bitcoin-900/10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-bitcoin-50/0 to-bitcoin-100/0 group-hover:from-bitcoin-50/50 group-hover:to-bitcoin-100/30 rounded-2xl transition-all duration-500" />
               
               <div className="relative z-10">
                 <motion.div 

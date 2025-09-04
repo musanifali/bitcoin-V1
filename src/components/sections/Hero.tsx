@@ -7,10 +7,9 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className="relative pt-20 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative pt-8 pb-8 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundColor: '#fffdf1' }}>
       {/* Background Illustration */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-bitcoin-50/50 to-orange-50/30 dark:from-bitcoin-950/20 dark:to-orange-950/10" />
         {/* Geometric Bitcoin Pattern */}
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
           <div className="w-full h-full relative">
@@ -33,9 +32,9 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[60vh]">
           {/* Content Side */}
-          <div className="space-y-8">
+          <div className="space-y-8 order-2 lg:order-1">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -57,15 +56,18 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex flex-col sm:flex-row items-start gap-4"
+              className="flex flex-col sm:flex-row items-start gap-3 max-w-2xl"
             >
-              <Button size="xl" className="bg-bitcoin-500 hover:bg-bitcoin-600 text-white shadow-lg hover:shadow-xl transition-all">
-                Start Investing
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button size="lg" className="bg-bitcoin-500 hover:bg-bitcoin-600 text-white shadow-lg hover:shadow-xl transition-all flex-1 sm:flex-none">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="xl" className="group border-bitcoin-200 hover:border-bitcoin-500">
-                <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Watch Demo
+              <Button variant="outline" size="lg" className="group border-bitcoin-200 hover:border-bitcoin-500 flex-1 sm:flex-none">
+                Choose Your Wallet
+              </Button>
+              <Button variant="ghost" size="lg" className="group text-bitcoin-600 hover:text-bitcoin-700 hover:bg-bitcoin-50 flex-1 sm:flex-none">
+                <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                How It Works
               </Button>
             </motion.div>
           </div>
@@ -75,21 +77,15 @@ const Hero = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="relative"
+            className="relative order-1 lg:order-2"
           >
             {/* Main Illustration Container */}
-            <div className="relative w-full h-96 lg:h-[500px]">
+            <div className="relative w-full h-[400px] lg:h-[500px] flex items-center justify-center">
               {/* Hero Image */}
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full h-full flex items-center justify-center">
                 <div className="relative">
                   {/* Main Hero Image */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.5, type: "spring", stiffness: 80 }}
-                    className="relative w-80 h-80 lg:w-96 lg:h-96"
-                  >
+                  <div className="relative w-[400px] h-[400px] lg:w-[600px] lg:h-[600px]">
                     <Image
                       src="/illustrations/hero.png"
                       alt="Bitcoin V1 Hero Illustration"
@@ -97,86 +93,9 @@ const Hero = () => {
                       className="object-contain"
                       priority
                     />
-                  </motion.div>
-                  
-                  {/* Floating Elements Around Image */}
-                  <motion.div 
-                    className="absolute -top-8 -left-8 w-16 h-16 bg-bitcoin-500/20 rounded-full flex items-center justify-center"
-                    initial={{ opacity: 0, x: -20, y: -20 }}
-                    whileInView={{ opacity: 1, x: 0, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 1.4, type: "spring", stiffness: 100 }}
-                  >
-                    <Shield className="w-8 h-8 text-bitcoin-500" />
-                  </motion.div>
-                  <motion.div 
-                    className="absolute -top-8 -right-8 w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center"
-                    initial={{ opacity: 0, x: 20, y: -20 }}
-                    whileInView={{ opacity: 1, x: 0, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 1.5, type: "spring", stiffness: 100 }}
-                  >
-                    <TrendingUp className="w-8 h-8 text-green-600" />
-                  </motion.div>
-                  <motion.div 
-                    className="absolute -bottom-8 -left-8 w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center"
-                    initial={{ opacity: 0, x: -20, y: 20 }}
-                    whileInView={{ opacity: 1, x: 0, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 1.6, type: "spring", stiffness: 100 }}
-                  >
-                    <Globe className="w-8 h-8 text-blue-600" />
-                  </motion.div>
-                  <motion.div 
-                    className="absolute -bottom-8 -right-8 w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center"
-                    initial={{ opacity: 0, x: 20, y: 20 }}
-                    whileInView={{ opacity: 1, x: 0, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 1.7, type: "spring", stiffness: 100 }}
-                  >
-                    <Users className="w-8 h-8 text-purple-600" />
-                  </motion.div>
+                  </div>
                 </div>
               </div>
-
-              {/* Background Grid Pattern */}
-              <div className="absolute inset-0 opacity-20">
-                <div className="w-full h-full" style={{
-                  backgroundImage: `radial-gradient(circle, ${`hsl(var(--bitcoin-500))`} 1px, transparent 1px)`,
-                  backgroundSize: '30px 30px'
-                }} />
-              </div>
-
-              {/* Floating V1 Elements */}
-              <motion.div 
-                className="absolute top-8 left-8"
-                initial={{ opacity: 0, rotate: -90 }}
-                whileInView={{ opacity: 0.3, rotate: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.2, delay: 2.0, ease: "easeOut" }}
-              >
-                <div className="text-bitcoin-500/40 font-black text-2xl">V1</div>
-              </motion.div>
-              
-              <motion.div 
-                className="absolute bottom-12 right-12"
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 0.2, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 2.2, ease: "easeOut" }}
-              >
-                <div className="text-bitcoin-400/50 font-black text-xl tracking-wider">V1</div>
-              </motion.div>
-              
-              <motion.div 
-                className="absolute top-1/3 right-4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 0.15, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.5, delay: 2.4, ease: "easeOut" }}
-              >
-                <div className="text-orange-500/60 font-black text-3xl">V1</div>
-              </motion.div>
             </div>
           </motion.div>
         </div>

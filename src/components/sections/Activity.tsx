@@ -60,7 +60,7 @@ const Activity = () => {
               className="relative text-center space-y-4 group"
             >
               {/* Premium Background Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-bitcoin-50/0 to-orange-50/0 group-hover:from-bitcoin-50/30 group-hover:to-orange-50/20 rounded-2xl transition-all duration-500 dark:from-bitcoin-950/0 dark:to-orange-950/0 dark:group-hover:from-bitcoin-950/20 dark:group-hover:to-orange-950/10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-bitcoin-50/0 to-orange-50/0 group-hover:from-bitcoin-50/30 group-hover:to-orange-50/20 rounded-2xl transition-all duration-500" />
               
               <div className="relative z-10">
                 <motion.div 
