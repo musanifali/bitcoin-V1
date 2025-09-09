@@ -24,7 +24,7 @@ export default function Home() {
       <Values />
       <Builders />
       <Community />
-      <EcosystemBlog />
+      <EcosystemBlog />th
       <Events />
       <JoinBitcoin />
       <Footer />
