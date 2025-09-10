@@ -15,42 +15,43 @@ const Header = () => {
       name: 'Introduction',
       href: '#',
       dropdown: [
-        { name: 'For Individuals', href: '#individuals' },
-        { name: 'For Businesses', href: '#businesses' },
-        { name: 'For Developers', href: '#developers' },
-        { name: 'Getting Started', href: '#getting-started' },
-        { name: 'How It Works', href: '#how-it-works' },
-        { name: 'White Paper', href: '#whitepaper' },
+        { name: 'For Individuals', href: '/en/individuals' },
+        { name: 'For Businesses', href: '/en/businesses' },
+        { name: 'For Developers', href: '/en/development' },
+        { name: 'Getting Started', href: '/en/getting-started' },
+        { name: 'How It Works', href: '/en/how-it-works' },
+        { name: 'White Paper', href: '/bitcoin.pdf' },
       ]
     },
     {
       name: 'Resources',
       href: '#',
       dropdown: [
-        { name: 'Documentation', href: '#documentation' },
-        { name: 'Wallets & Tools', href: '#wallets' },
-        { name: 'Community', href: '#community' },
-        { name: 'Events', href: '#events' },
-        { name: 'Innovations', href: '#innovations' },
-        { name: 'Glossary', href: '#glossary' },
+        { name: 'Resources', href: '/en/resources' },
+        { name: 'Choose Your Wallet', href: '/en/choose-your-wallet' },
+        { name: 'Exchanges', href: '/en/exchanges' },
+        { name: 'Community', href: '/en/community' },
+        { name: 'Events', href: '/en/events' },
+        { name: 'Vocabulary', href: '/en/vocabulary' },
       ]
     },
     {
       name: 'Participate',
       href: '#',
       dropdown: [
-        { name: 'Support the Network', href: '#support' },
-        { name: 'Nodes and Mining', href: '#mining' },
-        { name: 'Developer Hub', href: '#developer-hub' },
+        { name: 'Support Bitcoin', href: '/en/support-bitcoin' },
+        { name: 'Buy Bitcoin', href: '/en/buy' },
+        { name: 'Full Node', href: '/en/full-node' },
+        { name: 'Development', href: '/en/development' },
       ]
     },
     {
-      name: 'About',
-      href: '#about'
+      name: 'Bitcoin Core',
+      href: '/en/bitcoin-core/'
     },
     {
-      name: 'FAQ',
-      href: '#faq'
+      name: 'News',
+      href: '/en/blog'
     },
   ]
 
@@ -81,7 +82,7 @@ const Header = () => {
                 <span className="text-white font-bold text-sm">₿</span>
               </div>
               <span className="text-xl font-display font-semibold text-gray-900">
-                Bitcoin V1
+                Bitcoin.org
               </span>
             </Link>
           </div>
@@ -104,7 +105,7 @@ const Header = () => {
                         {item.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name}
-                            href={subItem.href}
+                            href={subItem.href as any}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-bitcoin-50 hover:text-bitcoin-600 transition-colors"
                             onClick={() => setActiveDropdown(null)}
                           >
@@ -116,7 +117,7 @@ const Header = () => {
                   </div>
                 ) : (
                   <Link
-                    href={item.href}
+                    href={item.href as any}
                     className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-bitcoin-500 transition-colors rounded-md hover:bg-gray-50"
                   >
                     {item.name}
@@ -169,7 +170,7 @@ const Header = () => {
                           {item.dropdown.map((subItem) => (
                             <Link
                               key={subItem.name}
-                              href={subItem.href}
+                              href={subItem.href as any}
                               className="block px-3 py-2 text-sm text-gray-600 hover:text-bitcoin-500 hover:bg-gray-50 rounded-md transition-colors"
                               onClick={() => {
                                 setIsMenuOpen(false)
@@ -184,7 +185,7 @@ const Header = () => {
                     </div>
                   ) : (
                     <Link
-                      href={item.href}
+                      href={item.href as any}
                       className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-bitcoin-500 hover:bg-gray-50 rounded-md transition-colors"
                       onClick={() => setIsMenuOpen(false)}
                     >

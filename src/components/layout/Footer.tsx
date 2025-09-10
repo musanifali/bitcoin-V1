@@ -15,39 +15,39 @@ const Footer = () => {
 
   const footerSections = [
     {
-      title: 'Services',
+      title: 'Getting Started',
       links: [
-        { name: 'Investment Plans', href: '#investment-plans' },
-        { name: 'Custody Solutions', href: '#custody' },
-        { name: 'Portfolio Management', href: '#portfolio' },
-        { name: 'Institutional Services', href: '#institutional' },
+        { name: 'Choose Your Wallet', href: '/en/choose-your-wallet' },
+        { name: 'How It Works', href: '/en/how-it-works' },
+        { name: 'Getting Started', href: '/en/getting-started' },
+        { name: 'Download', href: '/en/download' },
       ]
     },
     {
-      title: 'Platform',
+      title: 'Learn',
       links: [
-        { name: 'Client Dashboard', href: '#dashboard' },
-        { name: 'Security Features', href: '#security' },
-        { name: 'API Access', href: '#api' },
-        { name: 'Mobile App', href: '#mobile' },
+        { name: 'Things You Need to Know', href: '/en/you-need-to-know' },
+        { name: 'Secure Your Wallet', href: '/en/secure-your-wallet' },
+        { name: 'Protect Your Privacy', href: '/en/protect-your-privacy' },
+        { name: 'Bitcoin Core', href: '/en/bitcoin-core/' },
       ]
     },
     {
-      title: 'Resources',
+      title: 'Participate',
       links: [
-        { name: 'Investment Guides', href: '#guides' },
-        { name: 'Market Analysis', href: '#analysis' },
-        { name: 'Research Reports', href: '#research' },
-        { name: 'Educational Content', href: '#education' },
+        { name: 'Support Bitcoin', href: '/en/support-bitcoin' },
+        { name: 'Development', href: '/en/development' },
+        { name: 'Run a Full Node', href: '/en/full-node' },
+        { name: 'Resources', href: '/en/resources' },
       ]
     },
     {
-      title: 'Company',
+      title: 'Community',
       links: [
-        { name: 'About Us', href: '#about' },
-        { name: 'Careers', href: '#careers' },
-        { name: 'Contact Support', href: '#support' },
-        { name: 'Partner Program', href: '#partners' },
+        { name: 'Community Forums', href: '/en/community' },
+        { name: 'Exchanges', href: '/en/exchanges' },
+        { name: 'Events', href: '/en/events' },
+        { name: 'News & Blog', href: '/en/blog' },
       ]
     }
   ]
@@ -64,11 +64,11 @@ const Footer = () => {
                 <span className="text-white font-bold text-sm">₿</span>
               </div>
               <span className="text-xl font-display font-semibold text-foreground">
-                Bitcoin V1
+                Bitcoin.org
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Professional Bitcoin V1 and investment platform.
+              An open-source, peer-to-peer digital currency that empowers you to store and exchange value without relying on a central authority.
             </p>
             <div className="flex items-center space-x-4">
               <Button variant="ghost" size="icon">
@@ -106,14 +106,17 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="flex items-center space-x-6">
-              <Link href="#legal" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href={"/en/about-us" as any} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                About Us
+              </Link>
+              <Link href={"/en/privacy" as any} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Privacy
+              </Link>
+              <Link href={"/en/legal" as any} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Legal
               </Link>
-              <Link href="#privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="#terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Terms of Service
+              <Link href={"/en/press" as any} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Press
               </Link>
             </div>
             
@@ -129,7 +132,7 @@ const Footer = () => {
           
           <div className="mt-6 text-center">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Bitcoin V1. Professional Bitcoin investment platform.
+              © {new Date().getFullYear()} Bitcoin.org. Supporting Bitcoin since 2009.
             </p>
           </div>
         </div>

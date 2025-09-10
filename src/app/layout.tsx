@@ -5,9 +5,9 @@ import '../styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Bitcoin V1 - Welcome to Bitcoin V1',
-  description: 'Bitcoin V1 is an innovative platform for Bitcoin investment and holding strategies.',
-  keywords: 'Bitcoin V1, Bitcoin investment, cryptocurrency, digital assets, portfolio management',
+  title: 'Bitcoin - Open source P2P money',
+  description: 'Bitcoin is an innovative payment network and a new kind of money. Find all you need to know and get started with Bitcoin on bitcoin.org.',
+  keywords: 'bitcoin, cryptocurrency, digital currency, blockchain, peer-to-peer, decentralized, open source',
 }
 
 export default function RootLayout({
