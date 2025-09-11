@@ -6,36 +6,36 @@ import { Calendar, Clock, ArrowRight, Newspaper } from 'lucide-react'
 export default function News() {
   const newsItems = [
     {
-      title: 'Bitcoin V1 Lightning Network Integration Complete',
-      excerpt: 'The Bitcoin V1 network now fully supports Lightning Network payments, enabling instant transactions with minimal fees.',
+      title: 'BitcoinG1 Lightning Network Integration Complete',
+      excerpt: 'The BitcoinG1 network now fully supports Lightning Network payments, enabling instant transactions with minimal fees.',
       date: '2025-09-09',
       time: '2 hours ago',
       category: 'Technology'
     },
     {
-      title: 'New Mining Pool Joins Bitcoin V1 Network',
-      excerpt: 'A major mining operation has joined the Bitcoin V1 network, further strengthening network security and decentralization.',
+      title: 'New Mining Pool Joins BitcoinG1 Network',
+      excerpt: 'A major mining operation has joined the BitcoinG1 network, further strengthening network security and decentralization.',
       date: '2025-09-08',
       time: '1 day ago',
       category: 'Mining'
     },
     {
-      title: 'Bitcoin V1 Core 25.1 Released with Security Enhancements',
-      excerpt: 'The latest version of Bitcoin V1 Core includes important security updates and performance improvements.',
+      title: 'BitcoinG1 Core 25.1 Released with Security Enhancements',
+      excerpt: 'The latest version of BitcoinG1 Core includes important security updates and performance improvements.',
       date: '2025-09-07',
       time: '2 days ago',
       category: 'Software'
     },
     {
       title: 'Global Adoption Surges: 50M+ Active Wallets',
-      excerpt: 'Bitcoin V1 wallet adoption has reached a new milestone with over 50 million active wallets worldwide.',
+      excerpt: 'BitcoinG1 wallet adoption has reached a new milestone with over 50 million active wallets worldwide.',
       date: '2025-09-06',
       time: '3 days ago',
       category: 'Adoption'
     },
     {
       title: 'Developer Conference 2025 Announces Speakers',
-      excerpt: 'Leading Bitcoin V1 developers and researchers announced for the upcoming Bitcoin V1 Developer Conference.',
+      excerpt: 'Leading BitcoinG1 developers and researchers announced for the upcoming BitcoinG1 Developer Conference.',
       date: '2025-09-05',
       time: '4 days ago',
       category: 'Events'
@@ -51,13 +51,13 @@ export default function News() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Bitcoin V1 
+              BitcoinG1 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
                 News
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Latest updates and announcements from the Bitcoin V1 ecosystem.
+              Latest updates and announcements from the BitcoinG1 ecosystem.
             </p>
           </div>
         </div>
@@ -116,3 +116,4 @@ export default function News() {
     </main>
   )
 }
+

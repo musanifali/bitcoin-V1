@@ -9,13 +9,13 @@ const Hero = () => {
     <section className="relative pt-8 pb-8 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundColor: '#fffdf1' }}>
       {/* Background Illustration */}
       <div className="absolute inset-0 z-0">
-        {/* Geometric Bitcoin V1 Pattern */}
+        {/* Geometric BitcoinG1 Pattern */}
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
           <div className="w-full h-full relative">
             <div className="absolute top-20 right-20 w-32 h-32 border-2 border-bitcoin-500/30 rounded-full animate-pulse" />
             <div className="absolute top-40 right-40 w-24 h-24 border-2 border-bitcoin-400/40 rounded-full animate-pulse delay-100" />
             <div className="absolute top-60 right-60 w-16 h-16 border-2 border-bitcoin-600/20 rounded-full animate-pulse delay-200" />
-            {/* Bitcoin V1 Symbol */}
+            {/* BitcoinG1 Symbol */}
             <div className="absolute top-32 right-32 w-20 h-20 bg-bitcoin-500/10 rounded-full flex items-center justify-center">
               <span className="text-bitcoin-500 font-bold text-2xl">₿</span>
             </div>
@@ -52,7 +52,7 @@ const Hero = () => {
               </motion.div>
               
               <h1 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-display font-bold text-foreground leading-tight">
-                Bitcoin V1 is an innovative{' '}
+                BitcoinG1 is an innovative{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-bitcoin-500 to-bitcoin-600">
                   payment network
                 </span>
@@ -96,7 +96,7 @@ const Hero = () => {
                 asChild
               >
                 <a href="/en/buy">
-                  Buy Bitcoin V1
+                  Buy BitcoinG1
                 </a>
               </Button>
               
@@ -110,7 +110,7 @@ const Hero = () => {
               className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 mx-auto max-w-3xl"
             >
               <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                Bitcoin V1 operates through a decentralized network of computers that verify transactions using cryptographic proof instead of trust. 
+                BitcoinG1 operates through a decentralized network of computers that verify transactions using cryptographic proof instead of trust. 
                 This peer-to-peer electronic cash system enables direct transactions without intermediaries, giving you complete control over your money.
               </p>
               <Button 

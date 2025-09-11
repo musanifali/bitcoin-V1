@@ -82,7 +82,7 @@ const Header = () => {
                 <span className="text-white font-bold text-sm">₿</span>
               </div>
               <span className="text-xl font-display font-semibold text-gray-900">
-                Bitcoin.org
+                BitcoinG1
               </span>
             </Link>
           </div>

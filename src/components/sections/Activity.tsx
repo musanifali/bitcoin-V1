@@ -32,10 +32,10 @@ const Activity = () => {
         <div className="text-center space-y-4 mb-16">
           <p className="text-sm font-medium text-bitcoin-500 uppercase tracking-wider">Platform Performance</p>
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
-            Trusted Bitcoin V1 platform
+            Trusted BitcoinG1 platform
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Bitcoin V1's platform continues to grow with institutional-grade security
+            BitcoinG1's platform continues to grow with institutional-grade security
           </p>
         </div>
 
@@ -109,3 +109,4 @@ const Activity = () => {
 }
 
 export default Activity
+

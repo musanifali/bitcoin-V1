@@ -14,11 +14,11 @@ export default function SupportBitcoin() {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Support 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
-                Bitcoin V1
+                BitcoinG1
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Help strengthen and grow the Bitcoin V1 network.
+              Help strengthen and grow the BitcoinG1 network.
             </p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function SupportBitcoin() {
               </div>
               <div className="text-center">
                 <Share className="h-16 w-16 mx-auto text-bitcoin-500 mb-4" />
-                <h3 className="text-xl font-bold mb-4">Use Bitcoin V1</h3>
+                <h3 className="text-xl font-bold mb-4">Use BitcoinG1</h3>
                 <p className="text-muted-foreground">Increase adoption</p>
               </div>
             </div>
@@ -57,3 +57,4 @@ export default function SupportBitcoin() {
     </main>
   )
 }
+

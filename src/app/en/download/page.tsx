@@ -6,7 +6,7 @@ import { Download, Monitor, Smartphone, HardDrive } from 'lucide-react'
 export default function DownloadPage() {
   const downloads = [
     {
-      name: 'Bitcoin V1 Core',
+      name: 'BitcoinG1 Core',
       description: 'Full node client for maximum security and privacy',
       platforms: ['Windows', 'macOS', 'Linux'],
       icon: Monitor,
@@ -39,11 +39,11 @@ export default function DownloadPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Download 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
-                Bitcoin V1
+                BitcoinG1
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Get the official Bitcoin V1 software for your device.
+              Get the official BitcoinG1 software for your device.
             </p>
           </div>
         </div>
@@ -93,3 +93,4 @@ export default function DownloadPage() {
     </main>
   )
 }
+

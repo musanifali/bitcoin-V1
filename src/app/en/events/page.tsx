@@ -6,19 +6,19 @@ import { Calendar, MapPin, Clock } from 'lucide-react'
 export default function Events() {
   const events = [
     {
-      title: 'Bitcoin V1 Developer Conference 2025',
+      title: 'BitcoinG1 Developer Conference 2025',
       date: 'October 15-17, 2025',
       location: 'San Francisco, CA',
       type: 'Conference'
     },
     {
-      title: 'Local Bitcoin V1 Meetup',
+      title: 'Local BitcoinG1 Meetup',
       date: 'September 20, 2025',
       location: 'New York, NY',
       type: 'Meetup'
     },
     {
-      title: 'Bitcoin V1 Workshop',
+      title: 'BitcoinG1 Workshop',
       date: 'September 25, 2025',
       location: 'London, UK',
       type: 'Workshop'
@@ -33,13 +33,13 @@ export default function Events() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Bitcoin V1 
+              BitcoinG1 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
                 Events
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Upcoming conferences, meetups, and workshops in the Bitcoin V1 community.
+              Upcoming conferences, meetups, and workshops in the BitcoinG1 community.
             </p>
           </div>
         </div>
@@ -83,3 +83,4 @@ export default function Events() {
     </main>
   )
 }
+

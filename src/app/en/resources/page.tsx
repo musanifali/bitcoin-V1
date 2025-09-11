@@ -12,22 +12,22 @@ export default function Resources() {
       description: 'Comprehensive guides and technical documentation',
       resources: [
         {
-          title: 'Bitcoin V1 White Paper',
-          description: 'The original Bitcoin V1 paper by Satoshi Nakamoto',
+          title: 'BitcoinG1 White Paper',
+          description: 'The original BitcoinG1 paper by Satoshi Nakamoto',
           type: 'PDF',
           rating: 5,
           url: '/bitcoin.pdf'
         },
         {
           title: 'Developer Guide',
-          description: 'Complete guide for Bitcoin V1 developers',
+          description: 'Complete guide for BitcoinG1 developers',
           type: 'Web',
           rating: 5,
           url: '/en/developer-guide'
         },
         {
           title: 'API Reference',
-          description: 'Bitcoin V1 API documentation and examples',
+          description: 'BitcoinG1 API documentation and examples',
           type: 'Web',
           rating: 4,
           url: '/en/api-reference'
@@ -42,7 +42,7 @@ export default function Resources() {
       resources: [
         {
           title: 'Getting Started Guide',
-          description: 'Complete beginner guide to Bitcoin V1',
+          description: 'Complete beginner guide to BitcoinG1',
           type: 'Tutorial',
           rating: 5,
           url: '/en/getting-started'
@@ -56,7 +56,7 @@ export default function Resources() {
         },
         {
           title: 'Mining Guide',
-          description: 'Learn how to mine Bitcoin V1',
+          description: 'Learn how to mine BitcoinG1',
           type: 'Guide',
           rating: 4,
           url: '/en/mining-guide'
@@ -67,18 +67,18 @@ export default function Resources() {
       id: 'tools',
       name: 'Developer Tools',
       icon: Code,
-      description: 'Tools and libraries for Bitcoin V1 development',
+      description: 'Tools and libraries for BitcoinG1 development',
       resources: [
         {
-          title: 'Bitcoin V1 Core',
-          description: 'Reference implementation of Bitcoin V1',
+          title: 'BitcoinG1 Core',
+          description: 'Reference implementation of BitcoinG1',
           type: 'Software',
           rating: 5,
           url: '/en/bitcoin-core'
         },
         {
           title: 'JavaScript Library',
-          description: 'Bitcoin V1 JavaScript library for web development',
+          description: 'BitcoinG1 JavaScript library for web development',
           type: 'Library',
           rating: 4,
           url: '/en/js-library'
@@ -96,11 +96,11 @@ export default function Resources() {
       id: 'community',
       name: 'Community',
       icon: Users,
-      description: 'Connect with the Bitcoin V1 community',
+      description: 'Connect with the BitcoinG1 community',
       resources: [
         {
           title: 'Community Forum',
-          description: 'Discussion forum for Bitcoin V1 users',
+          description: 'Discussion forum for BitcoinG1 users',
           type: 'Forum',
           rating: 4,
           url: '/en/forum'
@@ -114,7 +114,7 @@ export default function Resources() {
         },
         {
           title: 'Local Meetups',
-          description: 'Find Bitcoin V1 meetups in your area',
+          description: 'Find BitcoinG1 meetups in your area',
           type: 'Events',
           rating: 4,
           url: '/en/meetups'
@@ -125,8 +125,8 @@ export default function Resources() {
 
   const featuredResources = [
     {
-      title: 'Bitcoin V1 Fundamentals Course',
-      description: 'Complete course covering all aspects of Bitcoin V1',
+      title: 'BitcoinG1 Fundamentals Course',
+      description: 'Complete course covering all aspects of BitcoinG1',
       image: '/api/placeholder/400/200',
       rating: 5,
       duration: '8 hours',
@@ -135,7 +135,7 @@ export default function Resources() {
     },
     {
       title: 'Security Best Practices',
-      description: 'Essential security practices for Bitcoin V1 users',
+      description: 'Essential security practices for BitcoinG1 users',
       image: '/api/placeholder/400/200',
       rating: 5,
       duration: '45 minutes',
@@ -160,13 +160,13 @@ export default function Resources() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Bitcoin V1 
+              BitcoinG1 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
                 Resources
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Everything you need to learn, build, and succeed with Bitcoin V1.
+              Everything you need to learn, build, and succeed with BitcoinG1.
             </p>
           </div>
         </div>
@@ -318,3 +318,4 @@ export default function Resources() {
     </main>
   )
 }
+

@@ -8,7 +8,7 @@ const Values = () => {
     {
       icon: Coins,
       title: 'Bitcoin Focus',
-      description: 'Specialized exclusively in Bitcoin V1 and investment',
+      description: 'Specialized exclusively in BitcoinG1 and investment',
     },
     {
       icon: Shield,
@@ -33,7 +33,7 @@ const Values = () => {
         <div className="text-center space-y-4 mb-16">
           <p className="text-sm font-medium text-bitcoin-500 uppercase tracking-wider">Our Values</p>
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
-            Professional Bitcoin V1
+            Professional BitcoinG1
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Secure, transparent, client-focused
@@ -99,3 +99,4 @@ const Values = () => {
 }
 
 export default Values
+

@@ -11,8 +11,8 @@ import {
 
 export default function NewsAlerts() {
   const featuredNews = {
-    title: "Bitcoin V1 Network Upgrade: Enhanced Security and Performance",
-    excerpt: "The latest Bitcoin V1 protocol update introduces advanced security features and significant performance improvements.",
+    title: "BitcoinG1 Network Upgrade: Enhanced Security and Performance",
+    excerpt: "The latest BitcoinG1 protocol update introduces advanced security features and significant performance improvements.",
     date: "3 hours ago",
     category: "Protocol Update",
     readTime: "5 min read"
@@ -60,13 +60,13 @@ export default function NewsAlerts() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Bitcoin V1 News & 
+            BitcoinG1 News & 
             <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
               Security Alerts
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay updated with the latest developments and security information from the Bitcoin V1 ecosystem
+            Stay updated with the latest developments and security information from the BitcoinG1 ecosystem
           </p>
         </div>
 
@@ -207,3 +207,4 @@ export default function NewsAlerts() {
     </section>
   )
 }
+

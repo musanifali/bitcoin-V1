@@ -12,8 +12,8 @@ export default function ChooseYourWallet() {
       description: 'Perfect for everyday use and payments on the go',
       wallets: [
         {
-          name: 'Bitcoin V1 Mobile',
-          description: 'Official Bitcoin V1 mobile wallet with advanced security features',
+          name: 'BitcoinG1 Mobile',
+          description: 'Official BitcoinG1 mobile wallet with advanced security features',
           features: ['HD Wallet', 'Multi-signature', 'Lightning Network'],
           rating: 5,
           platforms: ['iOS', 'Android']
@@ -34,7 +34,7 @@ export default function ChooseYourWallet() {
       description: 'Full-featured wallets for your computer',
       wallets: [
         {
-          name: 'Bitcoin V1 Core',
+          name: 'BitcoinG1 Core',
           description: 'Full node wallet that downloads the entire blockchain',
           features: ['Full Node', 'Maximum Security', 'Network Support'],
           rating: 5,
@@ -53,7 +53,7 @@ export default function ChooseYourWallet() {
       id: 'hardware',
       name: 'Hardware Wallets',
       icon: Shield,
-      description: 'The most secure way to store Bitcoin V1',
+      description: 'The most secure way to store BitcoinG1',
       wallets: [
         {
           name: 'ColdSafe Pro',
@@ -75,7 +75,7 @@ export default function ChooseYourWallet() {
       id: 'web',
       name: 'Web Wallets',
       icon: Globe,
-      description: 'Access your Bitcoin V1 from any web browser',
+      description: 'Access your BitcoinG1 from any web browser',
       wallets: [
         {
           name: 'WebVault',
@@ -99,7 +99,7 @@ export default function ChooseYourWallet() {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Choose Your 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
-                Bitcoin V1 Wallet
+                BitcoinG1 Wallet
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -220,3 +220,4 @@ export default function ChooseYourWallet() {
     </main>
   )
 }
+
