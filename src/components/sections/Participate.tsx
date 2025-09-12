@@ -8,16 +8,16 @@ const Participate = () => {
   const primaryActions = [
     {
       icon: ShoppingCart,
-      title: 'Buy BitcoinG1',
-      description: 'Start your BitcoinG1 journey by purchasing your first coins safely and securely',
+      title: 'Buy Bitcoin Holding',
+      description: 'Start your Bitcoin Holding journey by purchasing your first coins safely and securely',
       href: '/en/buy',
       color: 'from-green-500 to-green-600',
       featured: true
     },
     {
       icon: DollarSign,
-      title: 'Sell BitcoinG1',
-      description: 'Learn how to safely sell your BitcoinG1 when you need to convert back to fiat',
+      title: 'Sell Bitcoin Holding',
+      description: 'Learn how to safely sell your Bitcoin Holding when you need to convert back to fiat',
       href: '/en/sell',
       color: 'from-blue-500 to-blue-600',
       featured: true
@@ -27,22 +27,22 @@ const Participate = () => {
   const communityActions = [
     {
       icon: Heart,
-      title: 'Support BitcoinG1',
-      description: 'Learn how to contribute to the BitcoinG1 network and ecosystem',
+      title: 'Support Bitcoin Holding',
+      description: 'Learn how to contribute to the Bitcoin Holding network and ecosystem',
       href: '/en/support-bitcoin',
       color: 'from-red-500 to-red-600',
     },
     {
       icon: Server,
       title: 'Run a Full Node',
-      description: 'Help secure the BitcoinG1 network by running your own node',
+      description: 'Help secure the Bitcoin Holding network by running your own node',
       href: '/en/full-node',
       color: 'from-orange-500 to-orange-600',
     },
     {
       icon: Code,
       title: 'Development',
-      description: 'Contribute to BitcoinG1 development and open-source projects',
+      description: 'Contribute to Bitcoin Holding development and open-source projects',
       href: '/en/development',
       color: 'from-purple-500 to-purple-600',
     }
@@ -51,22 +51,22 @@ const Participate = () => {
   const educationActions = [
     {
       icon: BookOpen,
-      title: 'Learn BitcoinG1',
-      description: 'Understand the fundamentals of BitcoinG1 technology',
+      title: 'Learn Bitcoin Holding',
+      description: 'Understand the fundamentals of Bitcoin Holding technology',
       href: '/en/how-it-works',
       color: 'from-indigo-500 to-indigo-600',
     },
     {
       icon: Users,
       title: 'Join Community',
-      description: 'Connect with fellow BitcoinG1 enthusiasts worldwide',
+      description: 'Connect with fellow Bitcoin Holding enthusiasts worldwide',
       href: '/en/community',
       color: 'from-pink-500 to-pink-600',
     },
     {
       icon: Shield,
       title: 'Security Best Practices',
-      description: 'Learn how to keep your BitcoinG1 safe and secure',
+      description: 'Learn how to keep your Bitcoin Holding safe and secure',
       href: '/en/secure-your-wallet',
       color: 'from-teal-500 to-teal-600',
     }
@@ -83,10 +83,10 @@ const Participate = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-4">
-              Participate in BitcoinG1
+              Participate in Bitcoin Holding
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              BitcoinG1 thrives through community participation. Discover how you can contribute 
+              Bitcoin Holding thrives through community participation. Discover how you can contribute 
               to the network, development, and adoption of this revolutionary technology.
             </p>
           </motion.div>
@@ -261,4 +261,5 @@ const Participate = () => {
 }
 
 export default Participate
+
 

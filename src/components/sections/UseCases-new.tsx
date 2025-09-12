@@ -50,10 +50,10 @@ const UseCases = () => {
           className="text-center space-y-4 mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
-            BitcoinG1 Solutions
+            Bitcoin Holding Solutions
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our comprehensive BitcoinG1 and investment services designed for every investor
+            Discover our comprehensive Bitcoin Holding and investment services designed for every investor
           </p>
         </motion.div>
         
@@ -141,4 +141,5 @@ const UseCases = () => {
 }
 
 export default UseCases
+
 

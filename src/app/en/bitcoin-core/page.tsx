@@ -13,12 +13,12 @@ export default function BitcoinCore() {
     {
       icon: Network,
       title: 'Network Support',
-      description: 'Help strengthen the BitcoinG1 network by running a full node'
+      description: 'Help strengthen the Bitcoin Holding network by running a full node'
     },
     {
       icon: Code,
       title: 'Complete Control',
-      description: 'Have full control over your BitcoinG1 transactions and privacy'
+      description: 'Have full control over your Bitcoin Holding transactions and privacy'
     }
   ]
 
@@ -75,13 +75,13 @@ export default function BitcoinCore() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              BitcoinG1 
+              Bitcoin Holding 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
                 Core
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              The reference implementation of BitcoinG1. Run a full node and help secure the network.
+              The reference implementation of Bitcoin Holding. Run a full node and help secure the network.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -254,7 +254,7 @@ export default function BitcoinCore() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Start Using</h3>
-                  <p className="text-muted-foreground">Create or import a wallet and start sending/receiving BitcoinG1 transactions.</p>
+                  <p className="text-muted-foreground">Create or import a wallet and start sending/receiving Bitcoin Holding transactions.</p>
                 </div>
               </div>
             </div>
@@ -298,4 +298,5 @@ export default function BitcoinCore() {
     </main>
   )
 }
+
 

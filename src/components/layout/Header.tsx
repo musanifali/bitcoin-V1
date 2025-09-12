@@ -39,10 +39,21 @@ const Header = () => {
       name: 'Participate',
       href: '#',
       dropdown: [
-        { name: 'Support Bitcoin', href: '/en/support-bitcoin' },
-        { name: 'Buy Bitcoin', href: '/en/buy' },
+        { name: 'Support Bitcoin Holding', href: '/en/support-bitcoin' },
+        { name: 'Buy Bitcoin Holding', href: '/en/buy' },
         { name: 'Full Node', href: '/en/full-node' },
         { name: 'Development', href: '/en/development' },
+      ]
+    },
+    {
+      name: 'Chain',
+      href: '#',
+      dropdown: [
+        { name: 'Bitcoin1USD', href: '/en/chain/bitcoin1usd' },
+        { name: '1Bitcoin1', href: '/en/chain/1bitcoin1' },
+        { name: 'BitcoinG1', href: '/en/chain/bitcoing1' },
+        { name: 'BTC1Ai', href: '/en/chain/btc1ai' },
+        { name: 'BTC Quantum', href: '/en/chain/btc-quantum' },
       ]
     },
     {
@@ -71,6 +82,14 @@ const Header = () => {
     setActiveDropdown(activeDropdown === name ? null : name)
   }
 
+  const handleMouseEnter = (name: string) => {
+    setActiveDropdown(name)
+  }
+
+  const handleMouseLeave = () => {
+    setActiveDropdown(null)
+  }
+
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -82,7 +101,7 @@ const Header = () => {
                 <span className="text-white font-bold text-sm">₿</span>
               </div>
               <span className="text-xl font-display font-semibold text-gray-900">
-                BitcoinG1
+                Bitcoin Holding
               </span>
             </Link>
           </div>
@@ -90,11 +109,15 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1" ref={dropdownRef}>
             {navigation.map((item) => (
-              <div key={item.name} className="relative">
+              <div 
+                key={item.name} 
+                className="relative"
+                onMouseEnter={() => item.dropdown && handleMouseEnter(item.name)}
+                onMouseLeave={item.dropdown ? handleMouseLeave : undefined}
+              >
                 {item.dropdown ? (
                   <div>
                     <button
-                      onClick={() => handleDropdownClick(item.name)}
                       className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:text-bitcoin-500 transition-colors rounded-md hover:bg-gray-50"
                     >
                       {item.name}
@@ -107,7 +130,6 @@ const Header = () => {
                             key={subItem.name}
                             href={subItem.href as any}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-bitcoin-50 hover:text-bitcoin-600 transition-colors"
-                            onClick={() => setActiveDropdown(null)}
                           >
                             {subItem.name}
                           </Link>
@@ -211,3 +233,4 @@ const Header = () => {
 }
 
 export default Header
+

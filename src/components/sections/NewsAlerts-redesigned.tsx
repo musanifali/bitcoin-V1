@@ -17,8 +17,8 @@ import {
 
 export default function NewsAlerts() {
   const featuredNews = {
-    title: "BitcoinG1 Network Upgrade: Enhanced Security and Performance",
-    excerpt: "The latest BitcoinG1 protocol update introduces advanced security features and significant performance improvements. This major upgrade brings enhanced transaction speeds and improved security protocols.",
+    title: "Bitcoin Holding Network Upgrade: Enhanced Security and Performance",
+    excerpt: "The latest Bitcoin Holding protocol update introduces advanced security features and significant performance improvements. This major upgrade brings enhanced transaction speeds and improved security protocols.",
     date: "3 hours ago",
     category: "Protocol Update",
     readTime: "5 min read",
@@ -29,15 +29,15 @@ export default function NewsAlerts() {
   const trendingNews = [
     {
       title: "Lightning Network Integration Reaches 90% Completion",
-      excerpt: "Major milestone achieved in Lightning Network integration with BitcoinG1",
+      excerpt: "Major milestone achieved in Lightning Network integration with Bitcoin Holding",
       category: "Technology",
       time: "1 hour ago",
       views: "1.8k",
       priority: "high"
     },
     {
-      title: "Major Exchange Adds BitcoinG1 Support",
-      excerpt: "Leading cryptocurrency exchange announces full BitcoinG1 trading support",
+      title: "Major Exchange Adds Bitcoin Holding Support",
+      excerpt: "Leading cryptocurrency exchange announces full Bitcoin Holding trading support",
       category: "Markets",
       time: "3 hours ago",
       views: "3.2k",
@@ -90,7 +90,7 @@ export default function NewsAlerts() {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-bitcoin-500/10 rounded-full text-bitcoin-600 text-sm font-medium mb-6">
               <Newspaper className="w-4 h-4" />
-              <span>BitcoinG1 News Hub</span>
+              <span>Bitcoin Holding News Hub</span>
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
             </div>
             
@@ -99,7 +99,7 @@ export default function NewsAlerts() {
               <span className="bg-gradient-to-r from-bitcoin-500 via-orange-500 to-red-500 bg-clip-text text-transparent"> Informed</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get the latest BitcoinG1 news, security alerts, and network insights in one place
+              Get the latest Bitcoin Holding news, security alerts, and network insights in one place
             </p>
           </div>
         </div>
@@ -260,7 +260,7 @@ export default function NewsAlerts() {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h3 className="text-3xl font-bold text-foreground mb-2">Trending News</h3>
-              <p className="text-muted-foreground">Most viewed stories in BitcoinG1 community</p>
+              <p className="text-muted-foreground">Most viewed stories in Bitcoin Holding community</p>
             </div>
             <Button variant="outline" className="hidden md:flex">
               View All News
@@ -316,7 +316,7 @@ export default function NewsAlerts() {
         {/* Call to Action */}
         <div className="text-center bg-gradient-to-r from-bitcoin-500/10 via-orange-500/10 to-red-500/10 rounded-3xl p-12">
           <h3 className="text-3xl font-bold text-foreground mb-4">
-            Stay Connected with BitcoinG1
+            Stay Connected with Bitcoin Holding
           </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Subscribe to our newsletter for the latest updates, security alerts, and community news
@@ -334,4 +334,5 @@ export default function NewsAlerts() {
     </section>
   )
 }
+
 

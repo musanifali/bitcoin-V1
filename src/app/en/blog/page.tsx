@@ -5,9 +5,9 @@ import { Calendar, Clock, ArrowRight, Tag, User } from 'lucide-react'
 
 export default function Blog() {
   const featuredPost = {
-    title: 'BitcoinG1 Network Upgrade: What You Need to Know',
-    excerpt: 'The latest BitcoinG1 protocol update introduces significant improvements to security, scalability, and user experience. Learn about the new features and how they benefit the entire ecosystem.',
-    author: 'BitcoinG1 Team',
+    title: 'Bitcoin Holding Network Upgrade: What You Need to Know',
+    excerpt: 'The latest Bitcoin Holding protocol update introduces significant improvements to security, scalability, and user experience. Learn about the new features and how they benefit the entire ecosystem.',
+    author: 'Bitcoin Holding Team',
     date: '2025-09-08',
     readTime: '8 min read',
     category: 'Protocol Updates',
@@ -17,7 +17,7 @@ export default function Blog() {
   const recentPosts = [
     {
       title: 'Lightning Network Integration: Faster Payments',
-      excerpt: 'How the Lightning Network integration makes BitcoinG1 payments instant and affordable.',
+      excerpt: 'How the Lightning Network integration makes Bitcoin Holding payments instant and affordable.',
       author: 'Alice Johnson',
       date: '2025-09-07',
       readTime: '5 min read',
@@ -26,7 +26,7 @@ export default function Blog() {
     },
     {
       title: 'Security Best Practices for 2025',
-      excerpt: 'Updated security recommendations for BitcoinG1 users in the evolving digital landscape.',
+      excerpt: 'Updated security recommendations for Bitcoin Holding users in the evolving digital landscape.',
       author: 'Bob Smith',
       date: '2025-09-06',
       readTime: '7 min read',
@@ -34,8 +34,8 @@ export default function Blog() {
       image: '/api/placeholder/400/250'
     },
     {
-      title: 'Developer Spotlight: Building on BitcoinG1',
-      excerpt: 'Meet the developers creating innovative applications on the BitcoinG1 network.',
+      title: 'Developer Spotlight: Building on Bitcoin Holding',
+      excerpt: 'Meet the developers creating innovative applications on the Bitcoin Holding network.',
       author: 'Carol Davis',
       date: '2025-09-05',
       readTime: '6 min read',
@@ -44,7 +44,7 @@ export default function Blog() {
     },
     {
       title: 'Global Adoption Report: Q3 2025',
-      excerpt: 'Analyzing BitcoinG1 adoption trends and usage patterns around the world.',
+      excerpt: 'Analyzing Bitcoin Holding adoption trends and usage patterns around the world.',
       author: 'David Wilson',
       date: '2025-09-04',
       readTime: '10 min read',
@@ -61,8 +61,8 @@ export default function Blog() {
       image: '/api/placeholder/400/250'
     },
     {
-      title: 'Educational Initiative: BitcoinG1 in Schools',
-      excerpt: 'New educational programs bringing BitcoinG1 knowledge to students worldwide.',
+      title: 'Educational Initiative: Bitcoin Holding in Schools',
+      excerpt: 'New educational programs bringing Bitcoin Holding knowledge to students worldwide.',
       author: 'Frank Miller',
       date: '2025-09-02',
       readTime: '5 min read',
@@ -91,13 +91,13 @@ export default function Blog() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              BitcoinG1 
+              Bitcoin Holding 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
                 News & Blog
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Stay updated with the latest BitcoinG1 developments, insights, and community news.
+              Stay updated with the latest Bitcoin Holding developments, insights, and community news.
             </p>
           </div>
         </div>
@@ -240,7 +240,7 @@ export default function Blog() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Subscribe to our newsletter for the latest BitcoinG1 news and updates
+              Subscribe to our newsletter for the latest Bitcoin Holding news and updates
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
@@ -261,4 +261,5 @@ export default function Blog() {
     </main>
   )
 }
+
 

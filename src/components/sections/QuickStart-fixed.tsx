@@ -7,11 +7,11 @@ export default function QuickStart() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Get Started with 
             <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
-              BitcoinG1
+              Bitcoin Holding
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Begin your BitcoinG1 journey with these essential steps
+            Begin your Bitcoin Holding journey with these essential steps
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function QuickStart() {
             </h3>
             
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Choose a secure BitcoinG1 wallet to store and manage your digital assets
+              Choose a secure Bitcoin Holding wallet to store and manage your digital assets
             </p>
             
             <a 
@@ -61,7 +61,7 @@ export default function QuickStart() {
             </h3>
             
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Understand BitcoinG1 fundamentals, security best practices, and network features
+              Understand Bitcoin Holding fundamentals, security best practices, and network features
             </p>
             
             <a 
@@ -88,7 +88,7 @@ export default function QuickStart() {
             </h3>
             
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Send, receive, and manage BitcoinG1 transactions with confidence
+              Send, receive, and manage Bitcoin Holding transactions with confidence
             </p>
             
             <a 
@@ -126,4 +126,5 @@ export default function QuickStart() {
     </section>
   )
 }
+
 

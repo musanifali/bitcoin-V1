@@ -8,21 +8,21 @@ export default function Security() {
     {
       level: 'high',
       title: 'Critical Security Update Required',
-      description: 'All users must update to BitcoinG1 Core 25.1 or later to address a critical security vulnerability.',
+      description: 'All users must update to Bitcoin Holding Core 25.1 or later to address a critical security vulnerability.',
       date: '2025-09-08',
       action: 'Update Now'
     },
     {
       level: 'medium',
-      title: 'Phishing Campaign Targeting BitcoinG1 Users',
-      description: 'Be aware of fake websites and emails claiming to be from BitcoinG1. Always verify URLs and sources.',
+      title: 'Phishing Campaign Targeting Bitcoin Holding Users',
+      description: 'Be aware of fake websites and emails claiming to be from Bitcoin Holding. Always verify URLs and sources.',
       date: '2025-09-06',
       action: 'Learn More'
     },
     {
       level: 'low',
       title: 'Recommended: Enable Two-Factor Authentication',
-      description: 'For enhanced security, enable 2FA on all BitcoinG1-related accounts and services.',
+      description: 'For enhanced security, enable 2FA on all Bitcoin Holding-related accounts and services.',
       date: '2025-09-05',
       action: 'Setup Guide'
     }
@@ -43,7 +43,7 @@ export default function Security() {
     {
       icon: Shield,
       title: 'Use Reputable Software',
-      description: 'Only download BitcoinG1 software from official sources and verify signatures.',
+      description: 'Only download Bitcoin Holding software from official sources and verify signatures.',
       tips: [
         'Download from bitcoin.org only',
         'Verify GPG signatures',
@@ -54,7 +54,7 @@ export default function Security() {
     {
       icon: Eye,
       title: 'Practice Good Hygiene',
-      description: 'Follow security best practices for all your BitcoinG1 activities.',
+      description: 'Follow security best practices for all your Bitcoin Holding activities.',
       tips: [
         'Use strong, unique passwords',
         'Enable two-factor authentication',
@@ -79,7 +79,7 @@ export default function Security() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Stay informed about security issues and protect your BitcoinG1 assets.
+              Stay informed about security issues and protect your Bitcoin Holding assets.
             </p>
           </div>
         </div>
@@ -173,14 +173,14 @@ export default function Security() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">Security Resources</h2>
             <p className="text-lg text-muted-foreground mb-12">
-              Additional resources to help keep your BitcoinG1 secure
+              Additional resources to help keep your Bitcoin Holding secure
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-card rounded-xl border p-6 text-left">
                 <h3 className="text-lg font-bold mb-3">Security Checklist</h3>
                 <p className="text-muted-foreground mb-4">
-                  Complete checklist to secure your BitcoinG1 setup
+                  Complete checklist to secure your Bitcoin Holding setup
                 </p>
                 <Button variant="outline" size="sm">
                   <Download className="mr-2 h-4 w-4" />
@@ -191,7 +191,7 @@ export default function Security() {
               <div className="bg-card rounded-xl border p-6 text-left">
                 <h3 className="text-lg font-bold mb-3">Security Guide</h3>
                 <p className="text-muted-foreground mb-4">
-                  Comprehensive guide to BitcoinG1 security
+                  Comprehensive guide to Bitcoin Holding security
                 </p>
                 <Button variant="outline" size="sm">
                   Read Guide
@@ -208,7 +208,7 @@ export default function Security() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">Report a Security Issue</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Found a security vulnerability? Report it responsibly to help protect the BitcoinG1 network.
+              Found a security vulnerability? Report it responsibly to help protect the Bitcoin Holding network.
             </p>
             
             <Button size="lg" className="bg-red-500 hover:bg-red-600">
@@ -222,4 +222,5 @@ export default function Security() {
     </main>
   )
 }
+
 

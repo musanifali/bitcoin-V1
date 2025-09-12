@@ -10,7 +10,7 @@ const Resources = () => {
     {
       icon: BookOpen,
       title: 'Resources',
-      description: 'Comprehensive guides, tutorials, and documentation to get you started with Bitcoin',
+      description: 'Comprehensive guides, tutorials, and documentation to get you started with Bitcoin Holding',
       href: '/en/resources',
       color: 'from-blue-500 to-blue-600',
       featured: true
@@ -18,7 +18,7 @@ const Resources = () => {
     {
       icon: TrendingUp,
       title: 'Exchanges',
-      description: 'Find trusted platforms where you can buy and sell Bitcoin',
+      description: 'Find trusted platforms where you can buy and sell Bitcoin Holding',
       href: '/en/exchanges',
       color: 'from-green-500 to-green-600',
       featured: false
@@ -26,7 +26,7 @@ const Resources = () => {
     {
       icon: Users,
       title: 'Community',
-      description: 'Join forums and discussions with fellow Bitcoin enthusiasts',
+      description: 'Join forums and discussions with fellow Bitcoin Holding enthusiasts',
       href: '/en/community',
       color: 'from-purple-500 to-purple-600',
       featured: false
@@ -34,7 +34,7 @@ const Resources = () => {
     {
       icon: Calendar,
       title: 'Events',
-      description: 'Discover Bitcoin conferences, meetups, and educational events',
+      description: 'Discover Bitcoin Holding conferences, meetups, and educational events',
       href: '/en/events',
       color: 'from-orange-500 to-orange-600',
       featured: false
@@ -42,7 +42,7 @@ const Resources = () => {
     {
       icon: MessageCircle,
       title: 'Vocabulary',
-      description: 'Learn Bitcoin terminology and technical concepts',
+      description: 'Learn Bitcoin Holding terminology and technical concepts',
       href: '/en/vocabulary',
       color: 'from-teal-500 to-teal-600',
       featured: false

@@ -9,7 +9,7 @@ export default function BuyBitcoin() {
       id: 'exchanges',
       name: 'Cryptocurrency Exchanges',
       icon: Building,
-      description: 'Trade BitcoinG1 on major exchanges with competitive rates',
+      description: 'Trade Bitcoin Holding on major exchanges with competitive rates',
       pros: ['Low fees', 'High liquidity', 'Advanced trading features'],
       cons: ['Requires verification', 'Technical knowledge helpful'],
       exchanges: [
@@ -29,7 +29,7 @@ export default function BuyBitcoin() {
     },
     {
       id: 'brokers',
-      name: 'BitcoinG1 Brokers',
+      name: 'Bitcoin Holding Brokers',
       icon: CreditCard,
       description: 'Simple purchase directly with credit card or bank transfer',
       pros: ['Easy to use', 'Quick purchase', 'Customer support'],
@@ -53,7 +53,7 @@ export default function BuyBitcoin() {
       id: 'p2p',
       name: 'Peer-to-Peer Trading',
       icon: Users,
-      description: 'Buy directly from other BitcoinG1 users',
+      description: 'Buy directly from other Bitcoin Holding users',
       pros: ['Privacy', 'Various payment methods', 'Competitive prices'],
       cons: ['Requires caution', 'Escrow recommended'],
       exchanges: [
@@ -107,11 +107,11 @@ export default function BuyBitcoin() {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Buy 
               <span className="bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
-                BitcoinG1
+                Bitcoin Holding
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Purchase BitcoinG1 safely and securely through trusted platforms and services.
+              Purchase Bitcoin Holding safely and securely through trusted platforms and services.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function BuyBitcoin() {
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">How to Buy BitcoinG1</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">How to Buy Bitcoin Holding</h2>
             
             {buyingMethods.map((method, methodIndex) => (
               <div key={method.id} className={`mb-16 ${methodIndex > 0 ? 'border-t pt-16' : ''}`}>
@@ -264,7 +264,7 @@ export default function BuyBitcoin() {
               <div className="bg-card rounded-xl p-6 border border-blue-200">
                 <h3 className="text-xl font-bold mb-4">🔐 Secure Your Purchase</h3>
                 <p className="text-muted-foreground">
-                  Transfer your BitcoinG1 to your own wallet as soon as possible. Don't leave large amounts on exchanges.
+                  Transfer your Bitcoin Holding to your own wallet as soon as possible. Don't leave large amounts on exchanges.
                 </p>
               </div>
               
@@ -283,4 +283,5 @@ export default function BuyBitcoin() {
     </main>
   )
 }
+
 

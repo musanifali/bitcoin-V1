@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button'
 const EcosystemBlog = () => {
   const blogPosts = [
     {
-      title: 'BitcoinG1 Network Upgrade Scheduled',
-      excerpt: 'Important information about upcoming BitcoinG1 protocol improvements and what users need to know.',
+      title: 'Bitcoin Holding Network Upgrade Scheduled',
+      excerpt: 'Important information about upcoming Bitcoin Holding protocol improvements and what users need to know.',
       date: '2 days ago',
       category: 'Network Update',
       readTime: '5 min read',
@@ -16,15 +16,15 @@ const EcosystemBlog = () => {
     },
     {
       title: 'Security Best Practices Update',
-      excerpt: 'New recommendations for securing your BitcoinG1 wallet and protecting your private keys.',
+      excerpt: 'New recommendations for securing your Bitcoin Holding wallet and protecting your private keys.',
       date: '1 week ago',
       category: 'Security',
       readTime: '8 min read',
       type: 'blog',
     },
     {
-      title: 'BitcoinG1 Adoption Milestones',
-      excerpt: 'Latest developments in BitcoinG1 adoption by institutions and governments worldwide.',
+      title: 'Bitcoin Holding Adoption Milestones',
+      excerpt: 'Latest developments in Bitcoin Holding adoption by institutions and governments worldwide.',
       date: '2 weeks ago',
       category: 'Adoption',
       readTime: '10 min read',
@@ -34,15 +34,15 @@ const EcosystemBlog = () => {
 
   const alerts = [
     {
-      title: 'Phishing Alert: Fake BitcoinG1 Sites',
-      excerpt: 'Warning about fraudulent websites mimicking legitimate BitcoinG1 services.',
+      title: 'Phishing Alert: Fake Bitcoin Holding Sites',
+      excerpt: 'Warning about fraudulent websites mimicking legitimate Bitcoin Holding services.',
       date: '1 day ago',
       severity: 'high',
       type: 'alert',
     },
     {
-      title: 'BitcoinG1 Wallet Software Update Available',
-      excerpt: 'Recommended security update for popular BitcoinG1 wallet applications.',
+      title: 'Bitcoin Holding Wallet Software Update Available',
+      excerpt: 'Recommended security update for popular Bitcoin Holding wallet applications.',
       date: '3 days ago',
       severity: 'medium',
       type: 'alert',
@@ -65,7 +65,7 @@ const EcosystemBlog = () => {
             News & Alerts
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay informed with the latest BitcoinG1 news, security alerts, and important updates
+            Stay informed with the latest Bitcoin Holding news, security alerts, and important updates
           </p>
         </div>
 
@@ -193,4 +193,5 @@ const EcosystemBlog = () => {
 }
 
 export default EcosystemBlog
+
 

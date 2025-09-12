@@ -9,42 +9,42 @@ const Education = () => {
     {
       icon: BookOpen,
       title: 'Things You Need to Know',
-      description: 'Essential Bitcoin knowledge every user should understand before getting started.',
+      description: 'Essential Bitcoin Holding knowledge every user should understand before getting started.',
       href: '/en/you-need-to-know',
       color: 'from-blue-500 to-blue-600',
     },
     {
       icon: Shield,
       title: 'Secure Your Wallet',
-      description: 'Learn how to protect your Bitcoin with proper security practices.',
+      description: 'Learn how to protect your Bitcoin Holding with proper security practices.',
       href: '/en/secure-your-wallet',
       color: 'from-green-500 to-green-600',
     },
     {
       icon: Eye,
       title: 'Protect Your Privacy',
-      description: 'Understand Bitcoin privacy features and how to protect your financial data.',
+      description: 'Understand Bitcoin Holding privacy features and how to protect your financial data.',
       href: '/en/protect-your-privacy',
       color: 'from-purple-500 to-purple-600',
     },
     {
       icon: Users,
       title: 'For Individuals',
-      description: 'How individuals can benefit from using Bitcoin in their daily lives.',
+      description: 'How individuals can benefit from using Bitcoin Holding in their daily lives.',
       href: '/en/individuals',
       color: 'from-orange-500 to-orange-600',
     },
     {
       icon: Lightbulb,
       title: 'For Businesses',
-      description: 'Learn how businesses can integrate Bitcoin into their operations.',
+      description: 'Learn how businesses can integrate Bitcoin Holding into their operations.',
       href: '/en/businesses',
       color: 'from-teal-500 to-teal-600',
     },
     {
       icon: HelpCircle,
       title: 'FAQ',
-      description: 'Get answers to frequently asked questions about Bitcoin.',
+      description: 'Get answers to frequently asked questions about Bitcoin Holding.',
       href: '/en/faq',
       color: 'from-red-500 to-red-600',
     },
@@ -65,7 +65,7 @@ const Education = () => {
             Education & Learning
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive guides and resources to help you understand Bitcoin and use it safely
+            Comprehensive guides and resources to help you understand Bitcoin Holding and use it safely
           </p>
         </motion.div>
 

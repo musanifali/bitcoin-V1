@@ -8,22 +8,22 @@ const JoinBitcoin = () => {
   const participationAreas = [
     {
       icon: Heart,
-      title: 'Support Bitcoin',
-      description: 'Learn how to contribute to the Bitcoin network and ecosystem',
+      title: 'Support Bitcoin Holding',
+      description: 'Learn how to contribute to the Bitcoin Holding network and ecosystem',
       href: '/en/support-bitcoin',
       color: 'from-red-500 to-red-600',
     },
     {
       icon: Code,
       title: 'Development',
-      description: 'Contribute to Bitcoin development and open-source projects',
+      description: 'Contribute to Bitcoin Holding development and open-source projects',
       href: '/en/development',
       color: 'from-blue-500 to-blue-600',
     },
     {
       icon: Server,
       title: 'Run a Full Node',
-      description: 'Help secure the network by running your own Bitcoin node',
+      description: 'Help secure the network by running your own Bitcoin Holding node',
       href: '/en/full-node',
       color: 'from-green-500 to-green-600',
     },
@@ -34,10 +34,10 @@ const JoinBitcoin = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">
-            Participate in Bitcoin
+            Participate in Bitcoin Holding
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Bitcoin thrives through community participation. Discover how you can contribute 
+            Bitcoin Holding thrives through community participation. Discover how you can contribute 
             to the network, development, and adoption of this revolutionary technology.
           </p>
         </div>

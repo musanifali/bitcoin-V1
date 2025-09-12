@@ -12,13 +12,13 @@ export default function FullNode() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Run a BitcoinG1 
+              Run a Bitcoin Holding 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
                 Full Node
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Help secure and decentralize the BitcoinG1 network by running your own full node.
+              Help secure and decentralize the Bitcoin Holding network by running your own full node.
             </p>
             <Button size="lg" className="bg-bitcoin-500 hover:bg-bitcoin-600">
               <Download className="mr-2 h-5 w-5" />
@@ -35,7 +35,7 @@ export default function FullNode() {
               <div className="text-center">
                 <Shield className="h-16 w-16 mx-auto text-bitcoin-500 mb-4" />
                 <h3 className="text-xl font-bold mb-4">Network Security</h3>
-                <p className="text-muted-foreground">Strengthen BitcoinG1's decentralization</p>
+                <p className="text-muted-foreground">Strengthen Bitcoin Holding's decentralization</p>
               </div>
               <div className="text-center">
                 <Server className="h-16 w-16 mx-auto text-bitcoin-500 mb-4" />
@@ -56,4 +56,5 @@ export default function FullNode() {
     </main>
   )
 }
+
 

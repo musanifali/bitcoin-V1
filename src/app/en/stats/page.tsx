@@ -49,7 +49,7 @@ export default function Stats() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Real-time BitcoinG1 network statistics and metrics.
+              Real-time Bitcoin Holding network statistics and metrics.
             </p>
           </div>
         </div>
@@ -85,4 +85,5 @@ export default function Stats() {
     </main>
   )
 }
+
 

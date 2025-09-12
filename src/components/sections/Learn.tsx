@@ -9,28 +9,28 @@ const Learn = () => {
     {
       icon: BookOpen,
       title: 'Resources',
-      description: 'Comprehensive guides and documentation to help you understand Bitcoin',
+      description: 'Comprehensive guides and documentation to help you understand Bitcoin Holding',
       href: '/en/resources',
       color: 'from-blue-500 to-blue-600',
     },
     {
       icon: TrendingUp,
       title: 'Exchanges',
-      description: 'Find trusted platforms where you can buy and sell Bitcoin',
+      description: 'Find trusted platforms where you can buy and sell Bitcoin Holding',
       href: '/en/exchanges',
       color: 'from-green-500 to-green-600',
     },
     {
       icon: Users,
       title: 'Community',
-      description: 'Join forums and discussions with fellow Bitcoin enthusiasts',
+      description: 'Join forums and discussions with fellow Bitcoin Holding enthusiasts',
       href: '/en/community',
       color: 'from-purple-500 to-purple-600',
     },
     {
       icon: Calendar,
       title: 'Events',
-      description: 'Discover Bitcoin conferences, meetups, and educational events',
+      description: 'Discover Bitcoin Holding conferences, meetups, and educational events',
       href: '/en/events',
       color: 'from-orange-500 to-orange-600',
     },
@@ -58,8 +58,8 @@ const Learn = () => {
             Resources & Community
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Connect with the Bitcoin ecosystem through our curated resources, exchanges, community forums, 
-            and educational events designed to support your Bitcoin journey.
+            Connect with the Bitcoin Holding ecosystem through our curated resources, exchanges, community forums, 
+            and educational events designed to support your Bitcoin Holding journey.
           </p>
         </motion.div>
 

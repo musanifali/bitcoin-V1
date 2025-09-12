@@ -35,7 +35,7 @@ const Footer = () => {
     {
       title: 'Participate',
       links: [
-        { name: 'Support Bitcoin', href: '/en/support-bitcoin' },
+        { name: 'Support Bitcoin Holding', href: '/en/support-bitcoin' },
         { name: 'Development', href: '/en/development' },
         { name: 'Run a Full Node', href: '/en/full-node' },
         { name: 'Resources', href: '/en/resources' },
@@ -132,7 +132,7 @@ const Footer = () => {
           
           <div className="mt-6 text-center">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Bitcoin.org. Supporting Bitcoin since 2009.
+              © {new Date().getFullYear()} Bitcoin.org. Supporting Bitcoin Holding since 2009.
             </p>
           </div>
         </div>

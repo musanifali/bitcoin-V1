@@ -14,11 +14,11 @@ export default function Development() {
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Build on 
               <span className="block bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 bg-clip-text text-transparent">
-                BitcoinG1
+                Bitcoin Holding
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Developer resources and tools for building BitcoinG1 applications.
+              Developer resources and tools for building Bitcoin Holding applications.
             </p>
             <Button size="lg" className="bg-bitcoin-500 hover:bg-bitcoin-600">
               Start Building
@@ -60,4 +60,5 @@ export default function Development() {
     </main>
   )
 }
+
 
