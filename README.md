@@ -1,6 +1,10 @@
-# Bitcoin Holding Landing Page
+# Bitcoin Holding - Open Source P2P Money
 
-A modern, responsive landing page for Bitcoin Holding platform built with Next.js 14, TypeScript, and Tailwind CSS.
+A modern, responsive website for Bitcoin Holding built with Next.js 14, TypeScript, and Tailwind CSS.
+
+## 🚀 Live Demo
+
+Visit the live site: [https://bitcoin-holding.vercel.app](https://bitcoin-holding.vercel.app)
 
 ## 🚀 Features
 
