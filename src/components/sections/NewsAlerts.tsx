@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { colors, getDarkSectionColors } from '@/lib/colors'
 import { 
   AlertTriangle, 
   ArrowRight, 
@@ -77,28 +78,31 @@ export default function NewsAlerts() {
     { label: "Market Cap", value: "$1.2T", change: "-1.3%", positive: false }
   ]
 
+  // Get dark section colors
+  const darkColors = getDarkSectionColors()
+
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-background dark:to-gray-900">
+    <section className="py-24 bg-gray-900">
       <div className="container mx-auto px-4 lg:px-8">
         
         {/* Modern Header with Floating Elements */}
         <div className="text-center mb-20 relative">
           {/* Floating Background Elements */}
-          <div className="absolute -top-8 left-1/4 w-32 h-32 bg-bitcoin-500/5 rounded-full blur-3xl"></div>
-          <div className="absolute top-8 right-1/4 w-24 h-24 bg-orange-500/5 rounded-full blur-2xl"></div>
+          <div className="absolute -top-8 left-1/4 w-32 h-32 bg-bitcoin-400/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-8 right-1/4 w-24 h-24 bg-bitcoin-400/5 rounded-full blur-2xl"></div>
           
           <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-bitcoin-500/10 rounded-full text-bitcoin-600 text-sm font-medium mb-6">
+            <div className={`inline-flex items-center gap-2 px-4 py-2 ${darkColors.elements.badge} rounded-full text-sm font-medium mb-6`}>
               <Newspaper className="w-4 h-4" />
               <span>Bitcoin Holding News Hub</span>
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-bitcoin-400 rounded-full animate-pulse"></div>
             </div>
             
-            <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+            <h2 className={`text-5xl md:text-6xl font-bold ${darkColors.text.primary} mb-6`}>
               Stay 
-              <span className="bg-gradient-to-r from-bitcoin-500 via-orange-500 to-red-500 bg-clip-text text-transparent"> Informed</span>
+              <span className={darkColors.text.accent}> Informed</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className={`text-xl ${darkColors.text.secondary} max-w-3xl mx-auto`}>
               Get the latest Bitcoin Holding news, security alerts, and network insights in one place
             </p>
           </div>
@@ -111,10 +115,10 @@ export default function NewsAlerts() {
           <div className="xl:col-span-3">
             <div className="relative group">
               {/* Main Featured Card */}
-              <div className="relative bg-gradient-to-br from-white to-gray-50 dark:from-card dark:to-gray-800 rounded-3xl border border-gray-200 dark:border-border p-8 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div className={`relative ${darkColors.elements.card} rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden`}>
                 
                 {/* Background Pattern */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-bitcoin-500/5 to-transparent rounded-full transform translate-x-32 -translate-y-32"></div>
+                <div className="absolute top-0 right-0 w-64 h-64 bg-bitcoin-500/5 rounded-full transform translate-x-32 -translate-y-32"></div>
                 
                 <div className="relative z-10">
                   {/* Category Badge */}
@@ -127,7 +131,7 @@ export default function NewsAlerts() {
                         FEATURED
                       </span>
                     </div>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
                       <span className="flex items-center gap-1">
                         <Eye className="w-4 h-4" />
                         {featuredNews.views}
@@ -140,18 +144,18 @@ export default function NewsAlerts() {
                   </div>
                   
                   {/* Content */}
-                  <h3 className="text-3xl font-bold text-foreground mb-4 leading-tight group-hover:text-bitcoin-600 transition-colors">
+                  <h3 className={`text-3xl font-bold ${darkColors.text.primary} mb-4 leading-tight group-hover:${darkColors.text.accent} transition-colors`}>
                     {featuredNews.title}
                   </h3>
                   
-                  <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                     {featuredNews.excerpt}
                   </p>
                   
                   {/* Footer */}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                      <span className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
                         <Clock className="w-4 h-4" />
                         {featuredNews.date}
                       </span>
@@ -174,7 +178,7 @@ export default function NewsAlerts() {
           <div className="xl:col-span-2 space-y-6">
             
             {/* Live Network Stats */}
-            <div className="bg-gradient-to-br from-bitcoin-500 to-orange-600 rounded-2xl p-6 text-white relative overflow-hidden">
+            <div className="bg-bitcoin-500 rounded-2xl p-6 text-white relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full transform translate-x-16 -translate-y-16"></div>
               
               <div className="relative z-10">
@@ -205,14 +209,14 @@ export default function NewsAlerts() {
             </div>
 
             {/* Security Alerts Panel */}
-            <div className="bg-white dark:bg-card rounded-2xl border border-gray-200 dark:border-border p-6">
+            <div className={`${darkColors.elements.card} rounded-2xl p-6`}>
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 bg-red-100 dark:bg-red-900 rounded-xl">
                   <Shield className="w-5 h-5 text-red-600 dark:text-red-400" />
                 </div>
-                <h4 className="font-bold text-lg text-foreground">Security Center</h4>
+                <h4 className={`font-bold text-lg ${darkColors.text.primary}`}>Security Center</h4>
                 <div className="ml-auto">
-                  <Bell className="w-5 h-5 text-muted-foreground" />
+                  <Bell className="w-5 h-5 text-gray-500 dark:text-gray-400" />
                 </div>
               </div>
               
@@ -224,14 +228,14 @@ export default function NewsAlerts() {
                       : 'border-l-blue-500 bg-blue-50 dark:bg-blue-950/30'
                   }`}>
                     <div className="flex items-start justify-between mb-2">
-                      <h5 className="font-semibold text-foreground text-sm">
+                      <h5 className={`font-semibold ${darkColors.text.primary} text-sm`}>
                         {alert.title}
                       </h5>
                       <AlertTriangle className={`w-4 h-4 ${
-                        alert.severity === 'critical' ? 'text-red-500' : 'text-blue-500'
+                        alert.severity === 'critical' ? 'text-red-400' : 'text-blue-400'
                       }`} />
                     </div>
-                    <p className="text-xs text-muted-foreground mb-3">
+                    <p className={`text-xs ${darkColors.text.secondary} mb-3`}>
                       {alert.excerpt}
                     </p>
                     <div className="flex items-center justify-between">
@@ -259,10 +263,10 @@ export default function NewsAlerts() {
         <div className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h3 className="text-3xl font-bold text-foreground mb-2">Trending News</h3>
-              <p className="text-muted-foreground">Most viewed stories in Bitcoin Holding community</p>
+              <h3 className={`text-3xl font-bold ${darkColors.text.primary} mb-2`}>Trending News</h3>
+              <p className={darkColors.text.secondary}>Most viewed stories in Bitcoin Holding community</p>
             </div>
-            <Button variant="outline" className="hidden md:flex">
+            <Button variant="outline" className={`hidden md:flex ${darkColors.buttons.secondary}`}>
               View All News
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
@@ -271,7 +275,7 @@ export default function NewsAlerts() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {trendingNews.map((news, index) => (
               <div key={index} className="group cursor-pointer">
-                <div className="bg-white dark:bg-card rounded-2xl border border-gray-200 dark:border-border p-6 hover:shadow-lg hover:border-bitcoin-500/40 transition-all duration-300 h-full">
+                <div className={`${darkColors.elements.card} rounded-2xl p-6 hover:shadow-lg hover:border-bitcoin-400/40 transition-all duration-300 h-full`}>
                   
                   {/* Priority Indicator */}
                   <div className="flex items-center justify-between mb-4">
@@ -286,26 +290,26 @@ export default function NewsAlerts() {
                   </div>
                   
                   {/* Category */}
-                  <span className="inline-block bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-xs font-medium mb-4">
+                  <span className={`inline-block bg-gray-700 ${darkColors.text.secondary} px-3 py-1 rounded-full text-xs font-medium mb-4`}>
                     {news.category}
                   </span>
                   
                   {/* Content */}
-                  <h4 className="font-bold text-foreground mb-3 group-hover:text-bitcoin-600 transition-colors leading-tight">
+                  <h4 className={`font-bold ${darkColors.text.primary} mb-3 group-hover:${darkColors.text.accent} transition-colors leading-tight`}>
                     {news.title}
                   </h4>
                   
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  <p className={`text-sm ${darkColors.text.secondary} mb-4 leading-relaxed`}>
                     {news.excerpt}
                   </p>
                   
                   {/* Footer */}
-                  <div className="flex items-center justify-between text-xs text-muted-foreground">
+                  <div className={`flex items-center justify-between text-xs ${darkColors.text.muted}`}>
                     <span className="flex items-center gap-1">
                       <Clock className="w-3 h-3" />
                       {news.time}
                     </span>
-                    <Zap className="w-4 h-4 text-bitcoin-500" />
+                    <Zap className={`w-4 h-4 ${darkColors.text.accent}`} />
                   </div>
                 </div>
               </div>
@@ -314,18 +318,18 @@ export default function NewsAlerts() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center bg-gradient-to-r from-bitcoin-500/10 via-orange-500/10 to-red-500/10 rounded-3xl p-12">
-          <h3 className="text-3xl font-bold text-foreground mb-4">
+        <div className="text-center bg-bitcoin-400/10 rounded-3xl p-12 border border-bitcoin-400/20">
+          <h3 className={`text-3xl font-bold ${darkColors.text.primary} mb-4`}>
             Stay Connected with Bitcoin Holding
           </h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className={`text-lg ${darkColors.text.secondary} mb-8 max-w-2xl mx-auto`}>
             Subscribe to our newsletter for the latest updates, security alerts, and community news
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <Button className="bg-bitcoin-500 hover:bg-bitcoin-600 text-white flex-1">
+            <Button className={`${darkColors.buttons.primary} flex-1`}>
               Subscribe to Updates
             </Button>
-            <Button variant="outline" className="flex-1">
+            <Button className={`${darkColors.buttons.secondary} flex-1`}>
               Join Community
             </Button>
           </div>

@@ -28,15 +28,15 @@ import { brand, brandColors, brandTypography } from '@/brand'
 
 ```tsx
 const MyComponent = () => (
-  <div style={{
-    backgroundColor: brand.colors.background,
-    color: brand.colors.text,
-    padding: brand.spacing.lg,
-    borderRadius: brand.radius.md,
-  }}>
-    <h1 style={brandTypography.styles.h1}>
-      Welcome to Bitcoin Holding
-    </h1>
+  <div
+    style={{
+      backgroundColor: brand.colors.background,
+      color: brand.colors.text,
+      padding: brand.spacing.lg,
+      borderRadius: brand.radius.md,
+    }}
+  >
+    <h1 style={brandTypography.styles.h1}>Welcome to Bitcoin Holding</h1>
   </div>
 )
 ```
@@ -44,11 +44,13 @@ const MyComponent = () => (
 ## 🎨 Color System
 
 ### Primary Colors
+
 - **Primary**: `brand.colors.primary` (#f57c00)
 - **Secondary**: `brand.colors.secondary` (#ff9800)
 - **Background**: `brand.colors.background` (#fffdf1)
 
 ### Usage Examples
+
 ```tsx
 // Quick access
 backgroundColor: brand.colors.primary
@@ -63,16 +65,18 @@ background: brandColors.gradients.primary
 ## 📝 Typography System
 
 ### Font Families
+
 - **Display**: Inter, SF Pro Display (for headings)
 - **Body**: Inter (for body text)
 - **Mono**: SF Mono, Monaco (for code)
 
 ### Pre-defined Styles
+
 ```tsx
 // Hero text
 style={brandTypography.styles.heroTitle}
 
-// Section headings  
+// Section headings
 style={brandTypography.styles.h2}
 
 // Body text
@@ -82,12 +86,14 @@ style={brandTypography.styles.body}
 ## 📏 Spacing System
 
 ### Quick Spacing
+
 ```tsx
-padding: brand.spacing.md     // 1.5rem (24px)
-margin: brand.spacing.lg      // 2rem (32px)
+padding: brand.spacing.md // 1.5rem (24px)
+margin: brand.spacing.lg // 2rem (32px)
 ```
 
 ### Component Spacing
+
 ```tsx
 padding: brandSpacing.component.buttonPadding.md
 margin: brandSpacing.component.sectionMargin.lg
@@ -96,6 +102,7 @@ margin: brandSpacing.component.sectionMargin.lg
 ## 🧩 Component Variants
 
 ### Pre-defined Button Styles
+
 ```tsx
 // Primary button
 style={brandComponents.buttons.primary}
@@ -108,6 +115,7 @@ style={brandComponents.buttons.ghost}
 ```
 
 ### Card Variants
+
 ```tsx
 // Default card
 style={brandComponents.cards.default}
@@ -122,6 +130,7 @@ style={brandComponents.cards.highlight}
 ## 🎯 Brand Icons
 
 ### Import and Use Icons
+
 ```tsx
 import { BitcoinHoldingIcon, LoadingDots, ArrowRightIcon } from '@/brand/assets/icons'
 
@@ -133,6 +142,7 @@ import { BitcoinHoldingIcon, LoadingDots, ArrowRightIcon } from '@/brand/assets/
 ## 📖 Usage Guidelines
 
 ### ✅ Do's
+
 - Use the brand color palette consistently
 - Follow the typography hierarchy
 - Use consistent spacing based on the 4px grid
@@ -140,6 +150,7 @@ import { BitcoinHoldingIcon, LoadingDots, ArrowRightIcon } from '@/brand/assets/
 - Import from the main brand index file
 
 ### ❌ Don'ts
+
 - Don't use arbitrary colors outside the palette
 - Don't mix different font families
 - Don't use inconsistent spacing
@@ -161,14 +172,14 @@ module.exports = {
           500: '#f57c00',
           600: '#fb8500',
           // ...
-        }
+        },
       },
       fontFamily: {
-        'display': ['Inter', 'SF Pro Display', 'sans-serif'],
-        'body': ['Inter', 'sans-serif'],
-      }
-    }
-  }
+        display: ['Inter', 'SF Pro Display', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
+    },
+  },
 }
 ```
 
@@ -188,18 +199,19 @@ The brand kit works seamlessly with responsive design:
 ## 🚀 Implementation Examples
 
 ### Hero Section with Brand Kit
+
 ```tsx
 import { brand, brandTypography, brandColors } from '@/brand'
 
 const Hero = () => (
   <section style={{ backgroundColor: brand.colors.background }}>
-    <h1 style={brandTypography.styles.heroTitle}>
-      Welcome to Bitcoin Holding
-    </h1>
-    <button style={{
-      ...brandComponents.buttons.primary,
-      boxShadow: brand.shadows.lg
-    }}>
+    <h1 style={brandTypography.styles.heroTitle}>Welcome to Bitcoin Holding</h1>
+    <button
+      style={{
+        ...brandComponents.buttons.primary,
+        boxShadow: brand.shadows.lg,
+      }}
+    >
       Get Started
     </button>
   </section>
@@ -207,6 +219,7 @@ const Hero = () => (
 ```
 
 ### Card Component with Brand Kit
+
 ```tsx
 const FeatureCard = ({ title, description }) => (
   <div style={brandComponents.cards.elevated}>
@@ -219,6 +232,7 @@ const FeatureCard = ({ title, description }) => (
 ## 🔄 Future Updates
 
 The brand kit is designed to be:
+
 - **Scalable**: Easy to add new colors, typography, or components
 - **Maintainable**: Centralized system for easy updates
 - **Flexible**: Can be extended without breaking existing implementations
@@ -227,6 +241,7 @@ The brand kit is designed to be:
 ## 📞 Support
 
 For brand kit questions or requests for new components, please:
+
 1. Check the examples in `src/brand/examples.tsx`
 2. Review the brand guidelines in `src/brand/index.ts`
 3. Submit requests for new brand components or variants

@@ -1,3 +1,5 @@
+import UnifiedLoader from '../ui/UnifiedLoader'
+
 interface LaunchingSoonProps {
   title: string
   description: string
@@ -21,11 +23,14 @@ const LaunchingSoon = ({ title, description }: LaunchingSoonProps) => {
           Coming Soon
         </div>
         
-        {/* Simple 3 Dots Loader */}
-        <div className="flex items-center justify-center space-x-2 pt-4">
-          <div className="w-3 h-3 bg-bitcoin-500 rounded-full animate-bounce"></div>
-          <div className="w-3 h-3 bg-bitcoin-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-          <div className="w-3 h-3 bg-bitcoin-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+        {/* Unified Loader */}
+        <div className="pt-4">
+          <UnifiedLoader
+            type="minimal"
+            message=""
+            size="sm"
+            showText={false}
+          />
         </div>
       </div>
     </div>

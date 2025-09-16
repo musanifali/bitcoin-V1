@@ -2,39 +2,52 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
+import UnifiedLoader from './UnifiedLoader'
 
 const RouteLoader = () => {
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true) // Start with true for initial load
+  const [loadingType, setLoadingType] = useState<'initial' | 'navigation'>('initial')
   const pathname = usePathname()
   const previousPathname = useRef<string>('')
+  const hasInitialized = useRef(false)
 
-  // Handle route changes
+  // Handle initial page load
   useEffect(() => {
-    // If this is the first load, just store the pathname
-    if (!previousPathname.current) {
-      previousPathname.current = pathname
-      return
-    }
-
-    // If pathname changed, show loader
-    if (previousPathname.current !== pathname) {
-      setIsLoading(true)
-      
-      // Hide loader after a delay
+    if (!hasInitialized.current) {
+      // Initial page load
       const timer = setTimeout(() => {
         setIsLoading(false)
-      }, 800)
+        hasInitialized.current = true
+        previousPathname.current = pathname
+      }, 1500) // 1.5 seconds for initial load
 
-      // Update previous pathname
+      return () => clearTimeout(timer)
+    }
+  }, [])
+
+  // Handle route changes after initialization
+  useEffect(() => {
+    if (!hasInitialized.current || !previousPathname.current) return
+
+    // Only trigger for actual route changes
+    if (previousPathname.current !== pathname) {
+      setLoadingType('navigation')
+      setIsLoading(true)
+      
+      const timer = setTimeout(() => {
+        setIsLoading(false)
+      }, 600) // Shorter duration for navigation
+
       previousPathname.current = pathname
-
       return () => clearTimeout(timer)
     }
   }, [pathname])
 
-  // Handle navigation clicks
+  // Handle navigation clicks (only after initialization)
   useEffect(() => {
+    if (!hasInitialized.current) return
+
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement
       const link = target.closest('a')
@@ -50,6 +63,7 @@ const RouteLoader = () => {
               url.pathname !== currentUrl.pathname && 
               !link.target && 
               !url.href.startsWith('#')) {
+            setLoadingType('navigation')
             setIsLoading(true)
           }
         } catch (error) {
@@ -65,42 +79,11 @@ const RouteLoader = () => {
   return (
     <AnimatePresence>
       {isLoading && (
-        <>
-          {/* Top Progress Bar */}
-          <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            exit={{ scaleX: 1, opacity: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-bitcoin-500 via-orange-500 to-bitcoin-600 z-[9999] origin-left"
-          />
-          
-          {/* Center Loading Overlay */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998] flex items-center justify-center"
-          >
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="bg-white rounded-lg px-6 py-4 shadow-xl border border-gray-200"
-            >
-              <div className="flex items-center space-x-3">
-                <div className="flex space-x-1">
-                  <div className="w-2 h-2 bg-bitcoin-500 rounded-full animate-bounce"></div>
-                  <div className="w-2 h-2 bg-bitcoin-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                  <div className="w-2 h-2 bg-bitcoin-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                </div>
-                <span className="text-sm font-medium text-gray-700">Loading...</span>
-              </div>
-            </motion.div>
-          </motion.div>
-        </>
+        <UnifiedLoader
+          type={loadingType === 'initial' ? 'fullscreen' : 'overlay'}
+          size={loadingType === 'initial' ? 'md' : 'sm'}
+          message={loadingType === 'initial' ? 'Loading...' : 'Navigating...'}
+        />
       )}
     </AnimatePresence>
   )

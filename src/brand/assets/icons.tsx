@@ -43,7 +43,7 @@ export const BitcoinSymbol: React.FC<{ size?: number; className?: string }> = ({
   </svg>
 )
 
-// Loading Dots (for loaders)
+// Loading Dots (for loaders) - DEPRECATED: Use UnifiedLoader instead
 export const LoadingDots: React.FC<{ className?: string }> = ({ className = '' }) => (
   <div className={`flex space-x-1 ${className}`}>
     <div className="w-2 h-2 bg-current rounded-full animate-bounce" />

@@ -40,10 +40,10 @@ const QuickActions = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-6 leading-[1.5] py-3">
             Education Highlights
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-[1.6] py-2">
             Master the fundamentals of Bitcoin with our comprehensive educational resources
           </p>
         </motion.div>
@@ -87,7 +87,7 @@ const QuickActions = () => {
                     </motion.div>
                     
                     <motion.h3 
-                      className="text-xl font-semibold text-card-foreground mb-3 group-hover:text-bitcoin-600 transition-colors"
+                      className="text-xl font-semibold text-card-foreground mb-4 group-hover:text-bitcoin-600 transition-colors leading-[1.6] py-2"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
@@ -97,7 +97,7 @@ const QuickActions = () => {
                     </motion.h3>
                     
                     <motion.p 
-                      className="text-muted-foreground mb-6 leading-relaxed"
+                      className="text-muted-foreground mb-6 leading-[1.7] py-1"
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
@@ -111,7 +111,7 @@ const QuickActions = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: index * 0.2 + 0.6 }}
-                      className="flex items-center text-bitcoin-500 hover:text-bitcoin-600 group-hover:translate-x-1 transition-all font-medium"
+                      className="flex items-center text-bitcoin-500 hover:text-bitcoin-600 group-hover:translate-x-1 transition-all font-medium leading-[1.6] py-1"
                     >
                       Learn more 
                       <ArrowRight className="ml-2 h-4 w-4" />

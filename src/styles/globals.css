@@ -4,6 +4,19 @@
 
 @layer base {
   :root {
+    /* Bitcoin Brand Colors */
+    --bitcoin-50: #fff8e1;
+    --bitcoin-100: #ffecb3;
+    --bitcoin-200: #ffe082;
+    --bitcoin-300: #ffd54f;
+    --bitcoin-400: #ffca28;
+    --bitcoin-500: #f57c00; /* Main Bitcoin orange */
+    --bitcoin-600: #fb8500;
+    --bitcoin-700: #ef6c00;
+    --bitcoin-800: #e65100;
+    --bitcoin-900: #bf360c;
+    
+    /* UI Color Variables */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -24,6 +37,13 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 24 100% 50%;
     --radius: 0.5rem;
+    
+    /* Chain Colors */
+    --chain-bitcoin1usd: #10b981;
+    --chain-onebitcoin: #3b82f6;
+    --chain-bitcoing1: #8b5cf6;
+    --chain-btc1ai: #06b6d4;
+    --chain-btc-quantum: #f97316;
   }
 }
 
@@ -43,6 +63,19 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Loader optimizations */
+.app-loader {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateZ(0);
+  will-change: opacity;
+}
+
+/* Prevent flash of unstyled content */
+body {
+  transition: opacity 0.1s ease-in-out;
 }
 
 /* Reduced motion */

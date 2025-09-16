@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
-import PageLoader from '@/components/ui/PageLoader'
-import RouteLoader from '@/components/ui/RouteLoader'
+import AppLoader from '@/components/ui/AppLoader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PageLoader />
-        <RouteLoader />
+        <AppLoader />
         {children}
       </body>
     </html>

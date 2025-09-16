@@ -165,7 +165,7 @@ export default function NewsAlerts() {
                 </div>
               </div>
               
-              <Button variant="outline" size="sm" className="w-full mt-4 bg-white/10 border-white/20 text-white hover:bg-white/20" asChild>
+              <Button size="sm" className="w-full mt-4 bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all duration-300" asChild>
                 <a href="/en/stats">
                   View Details
                 </a>

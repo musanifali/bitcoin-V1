@@ -9,6 +9,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const navigation = [
     {
@@ -47,7 +48,7 @@ const Header = () => {
     },
     {
       name: 'Chain',
-      href: '#',
+      href: '/en/chain',
       dropdown: [
         { name: 'Bitcoin1USD', href: '/en/chain/bitcoin1usd' },
         { name: '1Bitcoin1', href: '/en/chain/1bitcoin1' },
@@ -75,7 +76,13 @@ const Header = () => {
     }
 
     document.addEventListener('mousedown', handleClickOutside)
-    return () => document.removeEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      // Cleanup timeout on unmount
+      if (hoverTimeoutRef.current) {
+        clearTimeout(hoverTimeoutRef.current)
+      }
+    }
   }, [])
 
   const handleDropdownClick = (name: string) => {
@@ -83,11 +90,28 @@ const Header = () => {
   }
 
   const handleMouseEnter = (name: string) => {
+    // Clear any pending timeout
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current)
+      hoverTimeoutRef.current = null
+    }
     setActiveDropdown(name)
   }
 
   const handleMouseLeave = () => {
-    setActiveDropdown(null)
+    // Add delay before closing dropdown
+    hoverTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null)
+    }, 200) // Increased to 200ms for better reliability
+  }
+
+  // Immediate dropdown opening for better responsiveness
+  const handleButtonHover = (name: string) => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current)
+      hoverTimeoutRef.current = null
+    }
+    setActiveDropdown(name)
   }
 
   return (
@@ -111,25 +135,34 @@ const Header = () => {
             {navigation.map((item) => (
               <div 
                 key={item.name} 
-                className="relative"
-                onMouseEnter={() => item.dropdown && handleMouseEnter(item.name)}
-                onMouseLeave={item.dropdown ? handleMouseLeave : undefined}
+                className="relative group"
               >
                 {item.dropdown ? (
-                  <div>
+                  <div 
+                    className="relative"
+                    onMouseEnter={() => handleMouseEnter(item.name)}
+                    onMouseLeave={handleMouseLeave}
+                  >
                     <button
-                      className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:text-bitcoin-500 transition-colors rounded-md hover:bg-gray-50"
+                      className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:text-bitcoin-500 transition-colors rounded-md hover:bg-gray-50 w-full"
+                      onMouseOver={() => handleButtonHover(item.name)}
+                      onFocus={() => handleButtonHover(item.name)}
                     >
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
                     {activeDropdown === item.name && (
-                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50">
+                      <div 
+                        className="absolute top-full left-0 w-56 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50 mt-1"
+                        onMouseEnter={() => handleMouseEnter(item.name)}
+                        onMouseLeave={handleMouseLeave}
+                      >
                         {item.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name}
                             href={subItem.href as any}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-bitcoin-50 hover:text-bitcoin-600 transition-colors"
+                            onClick={() => setActiveDropdown(null)}
                           >
                             {subItem.name}
                           </Link>
@@ -140,7 +173,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href as any}
-                    className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-bitcoin-500 transition-colors rounded-md hover:bg-gray-50"
+                    className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-bitcoin-500 transition-colors rounded-md hover:bg-gray-50"
                   >
                     {item.name}
                   </Link>

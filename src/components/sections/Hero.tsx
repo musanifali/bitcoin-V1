@@ -46,20 +46,20 @@ const Hero = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center px-4 py-2 bg-bitcoin-500/10 border border-bitcoin-500/20 rounded-full text-bitcoin-600 text-sm font-medium"
+                className="inline-flex items-center px-4 py-2 bg-bitcoin-50 border border-bitcoin-200 rounded-full text-bitcoin-600 text-sm font-medium"
               >
                 <span className="w-2 h-2 bg-bitcoin-500 rounded-full mr-2 animate-pulse"></span>
                 Innovative Digital Currency Platform
               </motion.div>
               
-              <h1 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-display font-bold text-foreground leading-loose">
+              <h1 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-display font-bold text-foreground leading-[1.6] py-4">
                 Bitcoin Holding is an innovative{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-bitcoin-500 to-bitcoin-600">
                   payment network
                 </span>
                 {' '}and a new kind of money
               </h1>
-              <p className="text-xl sm:text-2xl text-muted-foreground mx-auto leading-loose">
+              <p className="text-xl sm:text-2xl text-muted-foreground mx-auto leading-[1.7] py-3">
                 Empowering financial freedom through security and innovation. Join the global decentralized currency revolution.
               </p>
             </motion.div>

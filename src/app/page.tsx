@@ -1,5 +1,6 @@
 import Header from '@/components/layout/Header'
 import Hero from '@/components/sections/Hero'
+import BitcoinChains from '@/components/sections/BitcoinChains'
 import QuickStart from '@/components/sections/QuickStart'
 import Education from '@/components/sections/Education'
 import Resources from '@/components/sections/Resources'
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Header />
       <Hero />
+      <BitcoinChains />
       <QuickStart />
       <Education />
       <Resources />

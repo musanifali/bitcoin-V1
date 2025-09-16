@@ -51,9 +51,9 @@ const EcosystemBlog = () => {
 
   const getSeverityColor = (severity: string) => {
     switch (severity) {
-      case 'high': return 'from-red-500 to-red-600'
-      case 'medium': return 'from-yellow-500 to-yellow-600'
-      default: return 'from-blue-500 to-blue-600'
+      case 'high': return 'bg-red-500'
+      case 'medium': return 'bg-yellow-500'
+      default: return 'bg-blue-500'
     }
   }
 
@@ -91,7 +91,7 @@ const EcosystemBlog = () => {
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           <div className="flex items-center mb-2">
-                            <span className={`px-2 py-1 bg-gradient-to-r ${getSeverityColor(alert.severity)} text-white text-xs font-medium rounded-full mr-3`}>
+                            <span className={`px-2 py-1 ${getSeverityColor(alert.severity)} text-white text-xs font-medium rounded-full mr-3`}>
                               {alert.severity.toUpperCase()}
                             </span>
                             <span className="text-sm text-muted-foreground">{alert.date}</span>
