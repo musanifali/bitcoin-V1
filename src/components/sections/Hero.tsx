@@ -97,7 +97,7 @@ const Hero = () => {
                 asChild
               >
                 <a href="/en/buy">
-                  Buy Bitcoin Holding
+                  Buy Bitcoin Holding Ecosystem
                 </a>
               </Button>
               
@@ -137,15 +137,15 @@ const Hero = () => {
           className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-20 pt-16 border-t border-border"
         >
           <div className="text-center space-y-2">
-            <div className="text-3xl sm:text-4xl font-bold text-foreground">$2.5B+</div>
+            <div className="text-3xl sm:text-4xl font-bold text-foreground">$4.2B+</div>
             <div className="text-sm text-muted-foreground">Assets Under Management</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-3xl sm:text-4xl font-bold text-foreground">50K+</div>
+            <div className="text-3xl sm:text-4xl font-bold text-foreground">125K+</div>
             <div className="text-sm text-muted-foreground">Active Holders</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-3xl sm:text-4xl font-bold text-foreground">99.9%</div>
+            <div className="text-3xl sm:text-4xl font-bold text-foreground">99.98%</div>
             <div className="text-sm text-muted-foreground">Platform Uptime</div>
           </div>
         </motion.div>

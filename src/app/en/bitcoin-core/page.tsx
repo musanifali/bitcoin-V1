@@ -81,17 +81,12 @@ export default function BitcoinCore() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              The reference implementation of Bitcoin Holding. Run a full node and help secure the network.
+              The reference implementation of Bitcoin Holding. Coming soon - run a full node and help secure the network.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-bitcoin-500 hover:bg-bitcoin-600">
-                <Download className="mr-2 h-5 w-5" />
-                Download Bitcoin Core
-              </Button>
-              
-              <Button size="lg" variant="outline">
-                View Source Code
+              <Button size="lg" className="bg-gray-400 cursor-not-allowed" disabled>
+                Coming Soon
               </Button>
             </div>
           </div>
@@ -123,7 +118,7 @@ export default function BitcoinCore() {
       <section className="py-16 bg-muted/20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Download Bitcoin Core</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Bitcoin Core - Coming Soon</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {downloadOptions.map((option, index) => (
@@ -141,9 +136,8 @@ export default function BitcoinCore() {
                   
                   <p className="text-sm text-muted-foreground mb-6">Size: {option.size}</p>
                   
-                  <Button className="w-full bg-bitcoin-500 hover:bg-bitcoin-600">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
+                  <Button className="w-full bg-gray-400 cursor-not-allowed" disabled>
+                    Coming Soon
                   </Button>
                 </div>
               ))}
@@ -151,7 +145,7 @@ export default function BitcoinCore() {
             
             <div className="text-center mt-8">
               <p className="text-sm text-muted-foreground mb-4">
-                Latest Version: Bitcoin Core 25.1 • Released: September 2025
+                Bitcoin Core - Coming Soon • Expected Release: Q1 2026
               </p>
               <div className="flex justify-center space-x-4">
                 <a href="#" className="text-bitcoin-500 hover:text-bitcoin-600 text-sm">
@@ -223,8 +217,8 @@ export default function BitcoinCore() {
                   1
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Download and Install</h3>
-                  <p className="text-muted-foreground">Download Bitcoin Core for your operating system and follow the installation instructions.</p>
+                  <h3 className="text-lg font-semibold mb-2">Stay Updated</h3>
+                  <p className="text-muted-foreground">Bitcoin Core is currently in development. Stay tuned for the official release and installation instructions.</p>
                 </div>
               </div>
               
@@ -233,8 +227,8 @@ export default function BitcoinCore() {
                   2
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2">Initial Blockchain Download</h3>
-                  <p className="text-muted-foreground">Allow Bitcoin Core to download and verify the entire blockchain. This process may take several hours.</p>
+                  <h3 className="text-lg font-semibold mb-2">Blockchain Synchronization</h3>
+                  <p className="text-muted-foreground">Once released, Bitcoin Core will synchronize and verify the entire blockchain to ensure network security.</p>
                 </div>
               </div>
               

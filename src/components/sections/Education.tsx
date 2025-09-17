@@ -165,16 +165,28 @@ const Education = () => {
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Read the original Bitcoin white paper by Satoshi Nakamoto that started the cryptocurrency revolution
             </p>
-            <Button 
-              size="lg" 
-              className="bg-bitcoin-500 hover:bg-bitcoin-600 text-white"
-              asChild
-            >
-              <a href="/bitcoin.pdf">
-                Read White Paper
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button 
+                size="lg" 
+                className="bg-bitcoin-500 hover:bg-bitcoin-600 text-white"
+                asChild
+              >
+                <a href="/bitcoin.pdf">
+                  Read White Paper
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-bitcoin-200 hover:border-bitcoin-500"
+                asChild
+              >
+                <a href="/en/extension">
+                  Extension
+                </a>
+              </Button>
+            </div>
           </div>
         </motion.div>
       </div>

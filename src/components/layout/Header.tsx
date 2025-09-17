@@ -41,7 +41,7 @@ const Header = () => {
       href: '#',
       dropdown: [
         { name: 'Support Bitcoin Holding', href: '/en/support-bitcoin' },
-        { name: 'Buy Bitcoin Holding', href: '/en/buy' },
+        { name: 'Buy Bitcoin Holding Ecosystem', href: '/en/buy' },
         { name: 'Full Node', href: '/en/full-node' },
         { name: 'Development', href: '/en/development' },
       ]

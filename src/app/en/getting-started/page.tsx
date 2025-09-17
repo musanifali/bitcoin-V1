@@ -82,10 +82,10 @@ export default function GettingStarted() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Get Bitcoin Holding</h3>
                 <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-                  You can get Bitcoin Holding by accepting it as a payment for goods and services. There are also several ways you can buy Bitcoin Holding.
+                  You can get Bitcoin Holding by accepting it as a payment for goods and services. There are also several ways you can buy Bitcoin Holding Ecosystem.
                 </p>
                 <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href="/en/buy">Buy Bitcoin Holding</a>
+                  <a href="/en/buy">Buy Bitcoin Holding Ecosystem</a>
                 </Button>
               </div>
 

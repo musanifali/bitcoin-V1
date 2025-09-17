@@ -8,7 +8,7 @@ const Participate = () => {
   const primaryActions = [
     {
       icon: ShoppingCart,
-      title: 'Buy Bitcoin Holding',
+      title: 'Buy Bitcoin Holding Ecosystem',
       description: 'Start your Bitcoin Holding journey by purchasing your first coins safely and securely',
       href: '/en/buy',
       color: 'from-green-500 to-green-600',
@@ -16,7 +16,7 @@ const Participate = () => {
     },
     {
       icon: DollarSign,
-      title: 'Sell Bitcoin Holding',
+      title: 'Sell Bitcoin Holding Ecosystem',
       description: 'Learn how to safely sell your Bitcoin Holding when you need to convert back to fiat',
       href: '/en/sell',
       color: 'from-blue-500 to-blue-600',

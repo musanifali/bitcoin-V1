@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Bitcoin Holding - Open source P2P money',
-  description: 'Bitcoin Holding is an innovative payment network and a new kind of money. Find all you need to know and get started with Bitcoin Holding on bitcoin.org.',
+  description: 'Bitcoin Holding is an innovative payment network and a new kind of money. Find all you need to know and get started with Bitcoin Holding on Bitcoin Holding.',
   keywords: 'bitcoin holding, cryptocurrency, digital currency, blockchain, peer-to-peer, decentralized, open source',
 }
 

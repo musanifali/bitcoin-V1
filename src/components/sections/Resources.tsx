@@ -18,7 +18,7 @@ const Resources = () => {
     {
       icon: TrendingUp,
       title: 'Exchanges',
-      description: 'Find trusted platforms where you can buy and sell Bitcoin Holding',
+      description: 'Find trusted platforms where you can buy and sell Bitcoin Holding Ecosystem',
       href: '/en/exchanges',
       color: 'from-green-500 to-green-600',
       featured: false

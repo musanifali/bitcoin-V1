@@ -45,7 +45,7 @@ export default function Security() {
       title: 'Use Reputable Software',
       description: 'Only download Bitcoin Holding software from official sources and verify signatures.',
       tips: [
-        'Download from bitcoin.org only',
+        'Download from Bitcoin Holding only',
         'Verify GPG signatures',
         'Keep software updated',
         'Use antivirus protection'

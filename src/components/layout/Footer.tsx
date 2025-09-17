@@ -64,7 +64,7 @@ const Footer = () => {
                 <span className="text-white font-bold text-sm">₿</span>
               </div>
               <span className="text-xl font-display font-semibold text-foreground">
-                Bitcoin.org
+                Bitcoin Holding
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
@@ -132,7 +132,7 @@ const Footer = () => {
           
           <div className="mt-6 text-center">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Bitcoin.org. Supporting Bitcoin Holding since 2009.
+              © {new Date().getFullYear()} Bitcoin Holding. Supporting Bitcoin Holding since 2009.
             </p>
           </div>
         </div>

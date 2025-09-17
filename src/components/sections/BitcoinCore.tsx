@@ -94,7 +94,7 @@ const BitcoinCore = () => {
           </div>
           
           <h3 className="text-2xl font-bold text-foreground mb-4">
-            Download Bitcoin Core
+            Bitcoin Core
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Help support the Bitcoin network by running your own full node with the latest version of Bitcoin Core.
@@ -102,13 +102,10 @@ const BitcoinCore = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
               size="lg" 
-              className="bg-bitcoin-500 hover:bg-bitcoin-600 text-white"
-              asChild
+              className="bg-gray-400 cursor-not-allowed text-white"
+              disabled
             >
-              <a href="/en/download">
-                Download Bitcoin Core
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              Coming Soon
             </Button>
             <Button 
               size="lg" 
