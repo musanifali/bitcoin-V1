@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, X, Search, Globe, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import SearchBox from '@/components/ui/SearchBox'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -54,7 +55,7 @@ const Header = () => {
         { name: '1Bitcoin1', href: '/en/chain/1bitcoin1' },
         { name: 'BitcoinG1', href: '/en/chain/bitcoing1' },
         { name: 'BTC1Ai', href: '/en/chain/btc1ai' },
-        { name: 'BTC Quantum', href: '/en/chain/btc-quantum' },
+        { name: 'BTC1Qu', href: '/en/chain/btc-quantum' },
       ]
     },
     {
@@ -120,13 +121,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-bitcoin-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">₿</span>
-              </div>
-              <span className="text-xl font-display font-semibold text-gray-900">
-                Bitcoin Holding
-              </span>
+            <Link href="/" className="flex items-center">
+              <img src="/en/btc hnolding logo.svg" alt="Bitcoin Holding" className="h-12 w-auto" />
             </Link>
           </div>
 
@@ -183,10 +179,8 @@ const Header = () => {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center space-x-2">
-            <Button variant="ghost" size="icon" className="hover:bg-gray-50">
-              <Search className="h-4 w-4 text-gray-600" />
-            </Button>
+          <div className="hidden lg:flex items-center space-x-4">
+            <SearchBox />
             <Button variant="ghost" size="icon" className="hover:bg-gray-50">
               <Globe className="h-4 w-4 text-gray-600" />
             </Button>
@@ -249,13 +243,15 @@ const Header = () => {
                   )}
                 </div>
               ))}
-              <div className="flex items-center space-x-4 px-3 py-2 pt-4 border-t border-gray-200 mt-4">
-                <Button variant="ghost" size="icon" className="hover:bg-gray-50">
-                  <Search className="h-4 w-4 text-gray-600" />
-                </Button>
-                <Button variant="ghost" size="icon" className="hover:bg-gray-50">
-                  <Globe className="h-4 w-4 text-gray-600" />
-                </Button>
+              <div className="px-3 py-2 pt-4 border-t border-gray-200 mt-4">
+                <div className="mb-4">
+                  <SearchBox />
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Button variant="ghost" size="icon" className="hover:bg-gray-50">
+                    <Globe className="h-4 w-4 text-gray-600" />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ const ChainHoverTest = () => {
     { id: 'onebitcoin', name: '1Bitcoin1', color: 'blue' },
     { id: 'bitcoing1', name: 'BitcoinG1', color: 'purple' },
     { id: 'btc1ai', name: 'BTC1Ai', color: 'cyan' },
-    { id: 'btcQuantum', name: 'BTC Quantum', color: 'orange' },
+    { id: 'btcQuantum', name: 'BTC1Qu', color: 'orange' },
   ]
 
   return (

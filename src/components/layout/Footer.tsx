@@ -59,13 +59,8 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
           {/* Logo Section */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-bitcoin-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">₿</span>
-              </div>
-              <span className="text-xl font-display font-semibold text-foreground">
-                Bitcoin Holding
-              </span>
+            <Link href="/" className="flex items-center mb-4">
+              <img src="/en/btc hnolding logo.svg" alt="Bitcoin Holding" className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
               An open-source, peer-to-peer digital currency that empowers you to store and exchange value without relying on a central authority.

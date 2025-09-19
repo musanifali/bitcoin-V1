@@ -9,7 +9,7 @@ export default function BTC1AiPage() {
     tagline: 'AI-Powered',
     description: 'AI-enhanced Bitcoin with intelligent transaction processing and predictive analytics.',
     fullDescription: 'BTC1Ai revolutionizes Bitcoin with artificial intelligence, providing smart transaction routing, predictive market analytics, and automated optimization for maximum efficiency and profitability.',
-    logo: '₿AI',
+    logo: '/en/ai white logo.svg',
     color: 'from-cyan-500 to-teal-600',
     gradient: 'from-cyan-500 to-teal-600',
     features: [

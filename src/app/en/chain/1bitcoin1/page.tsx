@@ -9,7 +9,7 @@ export default function OneBitcoinOnePage() {
     tagline: 'One-to-One',
     description: 'Direct 1:1 Bitcoin representation with enhanced features and cross-chain compatibility.',
     fullDescription: 'Each 1Bitcoin1 token is backed by exactly 1 Bitcoin, bringing maximum decentralization and security to DeFi while maintaining perfect parity with the original Bitcoin.',
-    logo: '1₿1',
+    logo: '/en/1btc1 white logo.svg',
     color: 'from-blue-500 to-indigo-600',
     gradient: 'from-blue-500 to-indigo-600',
     features: [

@@ -9,7 +9,7 @@ export default function Bitcoin1USDPage() {
     tagline: 'Stable Value',
     description: 'The first truly stable Bitcoin fork designed for everyday transactions with price stability and security.',
     fullDescription: 'Bitcoin1USD combines the security and decentralization of Bitcoin with price stability mechanisms, making it perfect for daily transactions, remittances, and store of value.',
-    logo: '₿$',
+    logo: '/en/btc1usd white logo.svg',
     color: 'from-green-500 to-emerald-600',
     gradient: 'from-green-500 to-emerald-600',
     features: [

@@ -82,7 +82,7 @@ export const chainPalettes = {
   },
   
   btcQuantum: {
-    name: 'BTC Quantum',
+    name: 'BTC1Qu',
     symbol: 'BTCQ',
     baseColor: 'orange',
     colors: {
@@ -148,8 +148,8 @@ export const chainInfo = {
   },
   
   btcQuantum: {
-    name: 'BTC Quantum',
-    fullName: 'BTC Quantum Network',
+    name: 'BTC1Qu',
+    fullName: 'BTC1Qu Network',
     description: 'Quantum-resistant Bitcoin protocol',
     symbol: 'BTCQ',
     icon: '🟠',

@@ -7,35 +7,35 @@ import { getChainColorSystem } from '@/lib/colors'
 const BitcoinChains = () => {
   const bitcoinChains = [
     {
-      name: 'Bitcoin1USD',
-      logo: '₿$',
-      id: 'bitcoin1usd'
+      name: 'BTC1Ai',
+      logo: '/en/ai white logo.svg',
+      id: 'btc1ai'
     },
     {
       name: '1Bitcoin1',
-      logo: '1₿1', 
+      logo: '/en/1btc1 white logo.svg', 
       id: 'onebitcoin'
     },
     {
       name: 'BitcoinG1',
-      logo: '₿G1',
+      logo: '/en/genesis white logo.svg',
       id: 'bitcoing1'
     },
     {
-      name: 'BTC1Ai',
-      logo: '₿AI',
-      id: 'btc1ai'
+      name: 'Bitcoin1USD',
+      logo: '/en/btc1usd white logo.svg',
+      id: 'bitcoin1usd'
     },
     {
-      name: 'BTC Quantum',
-      logo: '₿Q',
+      name: 'BTC1Qu',
+      logo: '/en/quantum white logo.svg',
       id: 'btcQuantum'
     }
   ]
 
   return (
     <section className="py-16 bg-white dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <motion.div
@@ -62,7 +62,7 @@ const BitcoinChains = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16"
+          className="flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10 max-w-full overflow-hidden"
         >
           {bitcoinChains.map((chain, index) => {
             const chainSystem = getChainColorSystem(chain.id)
@@ -78,14 +78,9 @@ const BitcoinChains = () => {
               >
                 <Link href={`/en/chain/${chain.id}` as any} className="block">
                   {/* Logo Only */}
-                  <div className={`w-20 h-20 rounded-2xl ${chainSystem.getBackground('strong')} flex items-center justify-center text-white text-2xl font-bold shadow-lg group-hover:shadow-xl transition-all duration-300 cursor-pointer`}>
-                    {chain.logo}
+                  <div className={`w-28 h-28 md:w-32 md:h-32 rounded-2xl ${chainSystem.getBackground('strong')} flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 cursor-pointer`}>
+                    <img src={chain.logo} alt={chain.name} className="w-20 h-20 md:w-24 md:h-24 object-contain" />
                   </div>
-                  
-                  {/* Chain Name - Simple */}
-                  <p className="text-center text-sm font-medium text-gray-700 dark:text-gray-300 mt-3 group-hover:text-bitcoin-500 transition-colors cursor-pointer">
-                    {chain.name}
-                  </p>
                 </Link>
               </motion.div>
             )
