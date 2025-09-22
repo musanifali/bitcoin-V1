@@ -14,7 +14,7 @@ export default function ChainsIndexPage() {
       name: 'Bitcoin1USD',
       tagline: 'Stable Value',
       description: 'The first truly stable Bitcoin fork designed for everyday transactions with price stability.',
-      logo: '/en/btc1usd white logo.svg',
+      logo: '/en/btc1usd white logo.png',
       color: 'from-green-500 to-emerald-600',
       icon: DollarSign,
       features: ['Price Stability', 'Fast Transactions', 'Low Volatility'],
@@ -36,7 +36,7 @@ export default function ChainsIndexPage() {
       name: 'BitcoinG1',
       tagline: 'Generation One',
       description: 'Next-generation Bitcoin with revolutionary scalability and smart contracts.',
-      logo: '/en/genesis white logo.svg',
+      logo: '/en/genesis white logo.png',
       color: 'from-purple-500 to-violet-600',
       icon: Layers,
       features: ['100K+ TPS', 'Smart Contracts', '99% Energy Efficient'],
@@ -47,7 +47,7 @@ export default function ChainsIndexPage() {
       name: 'BTC1Ai',
       tagline: 'AI-Powered',
       description: 'AI-enhanced Bitcoin with intelligent transaction processing and predictive analytics.',
-      logo: '/en/ai white logo.svg',
+      logo: '/en/ai white logo.png',
       color: 'from-cyan-500 to-teal-600',
       icon: Brain,
       features: ['AI Transaction Routing', 'Predictive Analytics', 'Automated Trading'],
@@ -58,7 +58,7 @@ export default function ChainsIndexPage() {
       name: 'BTC1Qu',
       tagline: 'Quantum-Safe',
       description: 'Quantum-resistant Bitcoin for ultimate future-proof security against next-gen threats.',
-      logo: '/en/quantum white logo.svg',
+      logo: '/en/quantum white logo.png',
       color: 'from-orange-500 to-red-500',
       icon: Atom,
       features: ['Quantum Resistance', 'Post-Quantum Crypto', 'Future-Proof Security'],
@@ -110,11 +110,10 @@ export default function ChainsIndexPage() {
                 <Link href={`/en/chain/${chain.id}` as any}>
                   <div className="bg-white rounded-3xl border border-gray-200 p-8 shadow-sm hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.02] h-full">
                     
-                    {/* Header */}
-                    <div className="flex justify-center mb-6">
-                      <div className={`w-32 h-32 rounded-2xl bg-gradient-to-br ${chain.color} flex items-center justify-center shadow-lg`}>
-                        <img src={chain.logo} alt={chain.name} className="w-24 h-24 object-contain" />
-                      </div>
+                    {/* Chain Name Header */}
+                    <div className="text-center mb-6">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">{chain.name}</h3>
+                      <span className="text-sm text-gray-500 font-medium">{chain.tagline}</span>
                     </div>
 
                     {/* Description */}

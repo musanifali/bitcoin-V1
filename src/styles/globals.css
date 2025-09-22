@@ -83,6 +83,32 @@ html {
   overflow-x: hidden;
 }
 
+/* Prevent font inheritance for logo containers */
+.logo-container {
+  font-family: initial !important;
+  font-size: initial !important;
+  font-weight: initial !important;
+  line-height: initial !important;
+  letter-spacing: initial !important;
+  text-transform: initial !important;
+}
+
+.logo-container img {
+  font-family: initial !important;
+  font-size: initial !important;
+  font-weight: initial !important;
+}
+
+/* Reset SVG text elements */
+.logo-container svg,
+.logo-container svg *,
+img[src$=".svg"] {
+  font-family: initial !important;
+  font-size: initial !important;
+  font-weight: initial !important;
+  font-style: initial !important;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {

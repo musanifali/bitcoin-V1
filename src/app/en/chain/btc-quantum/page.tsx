@@ -9,7 +9,7 @@ export default function BTCQuantumPage() {
     tagline: 'Quantum-Safe',
     description: 'Quantum-resistant Bitcoin for ultimate future-proof security against next-gen threats.',
     fullDescription: 'BTC1Qu implements cutting-edge post-quantum cryptography to ensure your Bitcoin remains secure against future quantum computer attacks, providing unbreakable security for decades to come.',
-    logo: '/en/quantum white logo.svg',
+    logo: '/en/quantum white logo.png',
     color: 'from-orange-500 to-red-500',
     gradient: 'from-orange-500 to-red-500',
     features: [

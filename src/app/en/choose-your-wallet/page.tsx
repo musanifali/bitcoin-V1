@@ -1,7 +1,7 @@
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { Button } from '@/components/ui/button'
-import { Shield, Smartphone, Monitor, Globe, Star, Download } from 'lucide-react'
+import { Shield, Smartphone, Monitor, Globe, Star } from 'lucide-react'
 
 export default function ChooseYourWallet() {
   const walletCategories = [
@@ -139,9 +139,8 @@ export default function ChooseYourWallet() {
                             <span className="ml-2 text-sm text-muted-foreground">({wallet.rating}/5)</span>
                           </div>
                         </div>
-                        <Button size="sm" className="bg-bitcoin-500 hover:bg-bitcoin-600">
-                          <Download className="h-4 w-4 mr-2" />
-                          Download
+                        <Button size="sm" disabled className="bg-gray-400 cursor-not-allowed">
+                          Coming Soon
                         </Button>
                       </div>
                       

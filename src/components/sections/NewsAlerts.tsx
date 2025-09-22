@@ -82,7 +82,7 @@ export default function NewsAlerts() {
   const darkColors = getDarkSectionColors()
 
   return (
-    <section className="py-24 bg-gray-900">
+    <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4 lg:px-8">
         
         {/* Modern Header with Floating Elements */}

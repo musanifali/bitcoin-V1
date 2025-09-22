@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Github, Twitter, Globe, Sun, Moon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useState } from 'react'
+import BitcoinHoldingLogo from '@/components/ui/BitcoinHoldingLogo'
 
 const Footer = () => {
   const [isDark, setIsDark] = useState(false)
@@ -60,7 +61,7 @@ const Footer = () => {
           {/* Logo Section */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <Link href="/" className="flex items-center mb-4">
-              <img src="/en/btc hnolding logo.svg" alt="Bitcoin Holding" className="h-12 w-auto" />
+              <BitcoinHoldingLogo className="h-12 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
               An open-source, peer-to-peer digital currency that empowers you to store and exchange value without relying on a central authority.

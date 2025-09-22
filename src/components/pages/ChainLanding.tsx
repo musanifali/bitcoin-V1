@@ -28,13 +28,6 @@ const ChainLanding = ({ chainData }: ChainLandingProps) => {
               transition={{ duration: 0.8 }}
               className="text-center lg:text-left"
             >
-              {/* Logo Only */}
-              <div className="flex items-center justify-center lg:justify-start mb-6">
-                <div className="w-32 h-32 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg">
-                  <img src={chainData.logo} alt={chainData.name} className="w-24 h-24 object-contain" />
-                </div>
-              </div>
-              
               <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 {chainData.name}
               </h1>

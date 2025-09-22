@@ -73,7 +73,7 @@ const Participate = () => {
   ]
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center space-y-4 mb-16">
           <motion.div

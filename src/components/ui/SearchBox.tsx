@@ -120,6 +120,21 @@ const searchData: SearchResult[] = [
     url: '/en/chain',
     category: 'page',
     icon: <Layers className="w-4 h-4" />
+  },
+  // Exchanges
+  {
+    title: 'Exchanges',
+    description: 'Trusted platforms to buy, sell, and trade Bitcoin Holding',
+    url: '/en/exchanges',
+    category: 'resource',
+    icon: <Globe className="w-4 h-4" />
+  },
+  {
+    title: 'Swipe 21',
+    description: 'Premium trading exchange with DeFi integration and multi-chain support',
+    url: '/en/exchanges',
+    category: 'resource',
+    icon: <Globe className="w-4 h-4" />
   }
 ]
 
@@ -272,7 +287,7 @@ const SearchBox = () => {
                     {results.map((result, index) => (
                       <Link
                         key={result.url}
-                        href={result.url}
+                        href={result.url as any}
                         onClick={() => setIsOpen(false)}
                         className={`flex items-start px-4 py-3 hover:bg-gray-50 transition-colors ${
                           index === selectedIndex ? 'bg-bitcoin-50' : ''
@@ -309,7 +324,7 @@ const SearchBox = () => {
                       {searchData.slice(0, 4).map((item) => (
                         <Link
                           key={item.url}
-                          href={item.url}
+                          href={item.url as any}
                           onClick={() => setIsOpen(false)}
                           className="flex items-center text-sm text-gray-600 hover:text-bitcoin-600 transition-colors"
                         >

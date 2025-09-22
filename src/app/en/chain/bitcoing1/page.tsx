@@ -9,7 +9,7 @@ export default function BitcoinG1Page() {
     tagline: 'Generation One',
     description: 'Next-generation Bitcoin with revolutionary scalability and smart contracts.',
     fullDescription: 'BitcoinG1 represents the evolution of Bitcoin, bringing lightning-fast transactions, smart contract capabilities, and unprecedented energy efficiency while maintaining Bitcoin\'s core principles.',
-    logo: '/en/genesis white logo.svg',
+    logo: '/en/genesis white logo.png',
     color: 'from-purple-500 to-violet-600',
     gradient: 'from-purple-500 to-violet-600',
     features: [

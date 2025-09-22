@@ -30,7 +30,7 @@ const JoinBitcoin = () => {
   ]
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground">

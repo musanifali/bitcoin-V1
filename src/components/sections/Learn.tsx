@@ -37,7 +37,7 @@ const Learn = () => {
   ]
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background Illustration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 border border-bitcoin-500/30 rounded-full" />

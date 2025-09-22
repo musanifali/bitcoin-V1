@@ -5,6 +5,7 @@ import { TrendingUp, Shield, Globe, Star } from 'lucide-react'
 
 export default function Exchanges() {
   const exchanges = [
+    { name: 'Swipe 21', rating: 5, features: ['Premium Trading', 'DeFi Integration', 'Multi-Chain'] },
     { name: 'BitExchange Pro', rating: 5, features: ['Low Fees', 'High Security', 'Global'] },
     { name: 'CryptoMarket', rating: 4, features: ['User Friendly', 'Fast KYC', 'Mobile App'] },
     { name: 'TradeBTC', rating: 4, features: ['Advanced Trading', 'API Access', 'Institutional'] }
@@ -33,7 +34,7 @@ export default function Exchanges() {
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {exchanges.map((exchange, index) => (
                 <div key={index} className="bg-card rounded-xl border p-6 hover:border-bitcoin-500/40 transition-colors">
                   <h3 className="text-xl font-bold mb-2">{exchange.name}</h3>
@@ -49,7 +50,7 @@ export default function Exchanges() {
                       </span>
                     ))}
                   </div>
-                  <Button className="w-full bg-bitcoin-500 hover:bg-bitcoin-600">Visit Exchange</Button>
+                  <Button disabled className="w-full bg-gray-400 cursor-not-allowed">Coming Soon</Button>
                 </div>
               ))}
             </div>

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Menu, X, Search, Globe, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import SearchBox from '@/components/ui/SearchBox'
+import BitcoinHoldingLogo from '@/components/ui/BitcoinHoldingLogo'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -122,7 +123,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img src="/en/btc hnolding logo.svg" alt="Bitcoin Holding" className="h-12 w-auto" />
+              <BitcoinHoldingLogo className="h-12 w-auto" />
             </Link>
           </div>
 

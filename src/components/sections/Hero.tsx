@@ -137,15 +137,15 @@ const Hero = () => {
           className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-20 pt-16 border-t border-border"
         >
           <div className="text-center space-y-2">
-            <div className="text-3xl sm:text-4xl font-bold text-foreground">$4.2B+</div>
-            <div className="text-sm text-muted-foreground">Assets Under Management</div>
+            <div className="text-3xl sm:text-4xl font-bold text-foreground">$2.35T</div>
+            <div className="text-sm text-muted-foreground">Market Cap</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-3xl sm:text-4xl font-bold text-foreground">125K+</div>
+            <div className="text-3xl sm:text-4xl font-bold text-foreground">106M+</div>
             <div className="text-sm text-muted-foreground">Active Holders</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-3xl sm:text-4xl font-bold text-foreground">99.98%</div>
+            <div className="text-3xl sm:text-4xl font-bold text-foreground">99.99%</div>
             <div className="text-sm text-muted-foreground">Platform Uptime</div>
           </div>
         </motion.div>

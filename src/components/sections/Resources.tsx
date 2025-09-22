@@ -58,7 +58,7 @@ const Resources = () => {
   ]
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-muted/20 to-background">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-muted/20 to-background">
       <div className="container mx-auto max-w-7xl">
         {/* Section Header */}
         <motion.div
